@@ -1,0 +1,12 @@
+/* general styles */ 
+/* wildcard to override all default styles */
+* {
+    font-size: medium;
+}
+/* main styles */
+/* header styles */
+/* navigation bar styles */
+/* footer styles */
+
+/* NOTE/TO DO: add media queries for responsive design */
+/* media queries */
