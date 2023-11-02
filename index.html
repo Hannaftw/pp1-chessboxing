@@ -26,7 +26,12 @@
             <img src="assets\images\chessboxing-logo.png" alt="chessboxing logo"class="logo">
             <img src="" alt="menu icon" class="menu-icon">        
             <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="index.html" 
+                class="active"
+                aria-label="The page that is active Home"
+                rel="noopener">Home</a>
+            </li>
             <li><a href="chessboxing.html">Chessboxing</a></li>
             <li><a href="chess.html">Chess</a></li>
             <li><a href="boxing.html">Boxing</a></li>
@@ -36,18 +41,20 @@
 
         <!-- Header/title text section -->
         <div class="container-black">  
-            <h1 class="title">CHESSBOXING</h1> 
-            <h2 class="title">- the ultimate sport?</h2>
+            <h1>CHESSBOXING</h1> 
+            <h2>- the ultimate sport?</h2>
         </div>
         </header> 
        
         <!-- Hero image section -->
-        <!-- NOTE/TO DO - add hero image -->
-        <section class="hero-image hidden">
+        <!-- NOTE/TO DO - add hero image right now just placeholder text -->
+        <section class="hero hidden">
             <div class="container-white">
-            This is where the picture will be.       
-            <q class="q-introduction">
-            Some cool quote or something like that.
+            <img src="assets\images\chessboxing-hero.jpg" 
+                alt="hero image of chess pieces boxing" 
+                class="hero" aria-label="Two chess pieces that are boxing">      
+            <q id="q-introduction">
+            Some cool quote or something like that. In a different font.
             </q>
         </div>
         </section>
@@ -63,8 +70,7 @@
         </main>
 
         <!-- Footer section -->
-        <!-- NOTE/TO DO - add footer icons WITH ARIA LABELS 
-        remember to open the external links target="_blank" -->
+        <!-- NOTE/TO DO - add social media icons from fontawesome-->
          <footer>
             <div class="container-black">
             <p>Copyright text</p> 
@@ -73,7 +79,8 @@
             aria-label="Visit our Facebook page (opens in a new tab)">
                 <img src="icons-socialmedia" 
                 alt="icon for github" 
-                class="social-media-icon">
+                class="social-media-icon"
+                aria-label="The icon for the webpage GitHub">
             </a>
             <a href="https://github.com" 
             target="_blank"
@@ -81,7 +88,8 @@
             aria-label="Visit our Facebook page (opens in a new tab)">
                 <img src="icons-socialmedia" 
                 alt="icon for LinkedIn"
-                class="social-media-icon"> 
+                class="social-media-icon"
+                aria-label="The icon for the webpage LinkedIn"> 
             </a> 
             <a href="https://github.com" 
             target="_blank"
@@ -89,7 +97,8 @@
             aria-label="Visit our Facebook page (opens in a new tab)">
                 <img src="icons-socialmedia" 
                 alt="icon for Instagram"
-                class="social-media-icon"> 
+                class="social-media-icon"
+                aria-label="The icon for the website Instagram"> 
               </a> 
             </div>
         </footer>

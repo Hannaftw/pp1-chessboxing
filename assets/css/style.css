@@ -7,6 +7,7 @@
     background-color: #000;
     color: #fff;
 }
+
 /* main styles */
 main {
     display: flex; 
@@ -14,20 +15,9 @@ main {
     flex-direction: column;
 }
 
-/* container styles */
+/* For semantic elements that should now be displayed */
 .hidden {
     display: none;
-}
-.container-black {
-    display: flex;
-    background-color: #000;
-    color: #fff;
-}
-
-.container-white {
-    display: flex;
-    background-color: #fff;
-    color: #000;
 }
 
 body {
@@ -43,7 +33,7 @@ p {
 }
 
 /* header styles */
-h1 {
+header h1 {
     font-family: 'Rye', cursive;
     font-size: 3.5rem;
     line-height: 3.5rem;
@@ -52,7 +42,7 @@ h1 {
     text-align: center;
 }
 
-h2 {
+header h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
     font-style: italic;
@@ -61,11 +51,42 @@ h2 {
     font-weight: 400;
     text-align: center;
 }
-/* hero styles */
-/* navigation bar styles */
-/* footer styles */
 
-/* media queries */
+/* Section styles */
+/* navigation bar styles */
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.active {
+    color: #fff;
+}
+
+/* Hero styles */
+#q-introduction {
+    font-style: italic;
+}
+
+/* container styles */
+.container-black {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+}
+
+.container-white {
+    display: flex;
+    background-color: #fff;
+    color: #000;
+}
+/* Footer styles */
+footer {
+    display: flex;
+    width: 100%;    
+}
+
+/* Media queries */
 /* Media query: small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {   
     .container-black {
