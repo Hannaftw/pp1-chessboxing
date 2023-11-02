@@ -8,6 +8,28 @@
     color: #fff;
 }
 /* main styles */
+main {
+    display: flex; 
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+
+/* container styles */
+.hidden {
+    display: none;
+}
+.container-black {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+}
+
+.container-white {
+    display: flex;
+    background-color: #fff;
+    color: #000;
+}
+
 body {
     color: #fff;
     background-color: #000;
@@ -18,8 +40,8 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     line-height: 1.52px;
-    color: #fff;
 }
+
 /* header styles */
 h1 {
     font-family: 'Rye', cursive;
@@ -43,5 +65,31 @@ h2 {
 /* navigation bar styles */
 /* footer styles */
 
-/* NOTE/TO DO: add media queries for responsive design */
 /* media queries */
+/* Media query: small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {   
+    .container-black {
+        display: block;
+    }
+}
+  
+/* Media query: medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {   
+    .container-black {
+        display: flex;
+    }
+}
+
+/* Media query: large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {   
+    .container-black {
+        display: flex;
+    }
+}
+
+/* Media query: extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {   
+    .container-black {
+        display: flex;
+    }
+}
