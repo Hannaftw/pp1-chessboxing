@@ -10,31 +10,46 @@
         <title>Chessboxing - the ultimate sport</title>
         <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
 
-        <!-- Stylesheet NOTE/TO DO link to CSS stylesheet -->
+        
         <link rel="stylesheet" href="assets\css\style.css">
     </head>
 
     <body>
         <main>
         <!-- NOTE/TO DO ARIA LABELS --> 
-        <!-- NOTE/TO DO fix so that the semantic elements are HIDDEN -->
+        <!-- NOTE/TO DO fix so that the semantic elements are HIDDEN that are supposed to-->
         <!-- Header section -->
-        <!-- Navbar section -->
         <header>
         <div class="container-black">
-            <nav>
-            <img src="assets\images\chessboxing-logo.png" alt="chessboxing logo"class="logo">
-            <img src="" alt="menu icon" class="menu-icon">        
+            <img src="assets\images\chessboxing-logo.png" 
+                alt="chessboxing official logo" 
+                id="nav-logo"
+                aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)">
+        
+        
+        <!-- Navbar section -->
+        <nav>   
             <ul class="nav-links">
             <li>
                 <a href="index.html" 
                 class="active"
-                aria-label="The page that is active Home"
-                rel="noopener">Home</a>
+                aria-label="The page that is active Home">
+                Home
+                </a>
             </li>
-            <li><a href="chessboxing.html">Chessboxing</a></li>
-            <li><a href="chess.html">Chess</a></li>
-            <li><a href="boxing.html">Boxing</a></li>
+            <li>
+                <a href="chessboxing.html"
+                aria-label="navigate to the page Chessboxing">
+                Chessboxing
+                </a>
+            </li>
+            <li>
+                <a href="chess.html">
+                Chess
+                </a>
+            </li>
+            <li>
+                <a href="boxing.html">Boxing</a></li>
             </ul>
         </nav>
         </div>
@@ -48,11 +63,12 @@
        
         <!-- Hero image section -->
         <!-- NOTE/TO DO - add hero image right now just placeholder text -->
-        <section class="hero hidden">
+        <section class="hero">
             <div class="container-white">
             <img src="assets\images\chessboxing-hero.jpg" 
                 alt="hero image of chess pieces boxing" 
-                class="hero" aria-label="Two chess pieces that are boxing">      
+                id="hero-image" 
+                7aria-label="Two chess pieces that are boxing">      
             <q id="q-introduction">
             Some cool quote or something like that. In a different font.
             </q>
@@ -76,25 +92,25 @@
             <p>Copyright text</p> 
             <a href="https://github.com" target="_blank" 
             rel="noopener" 
-            aria-label="Visit our Facebook page (opens in a new tab)">
+            aria-label="Visit our GitHub page to see the repository for the site and all the code used (opens in a new tab)">
                 <img src="icons-socialmedia" 
                 alt="icon for github" 
                 class="social-media-icon"
-                aria-label="The icon for the webpage GitHub">
+                aria-label="The icon for the webpage GitHub from fontawesome.com">
             </a>
             <a href="https://github.com" 
             target="_blank"
             rel="noopener" 
-            aria-label="Visit our Facebook page (opens in a new tab)">
+            aria-label="Visit and connect via our LinkedIn page (opens in a new tab)">
                 <img src="icons-socialmedia" 
                 alt="icon for LinkedIn"
                 class="social-media-icon"
-                aria-label="The icon for the webpage LinkedIn"> 
+                aria-label="The icon for the webpage LinkedIn from fontawesome.com"> 
             </a> 
             <a href="https://github.com" 
             target="_blank"
             rel="noopener" 
-            aria-label="Visit our Facebook page (opens in a new tab)">
+            aria-label="Visit our Instagram page (opens in a new tab)">
                 <img src="icons-socialmedia" 
                 alt="icon for Instagram"
                 class="social-media-icon"
@@ -103,5 +119,7 @@
             </div>
         </footer>
     </main>
+    <!-- JavaScript for FontAwesome kit - credit further in README.md -->
+    <script src="https://kit.fontawesome.com/643645f09b.js" crossorigin="anonymous"></script>
     </body>
 </html>
