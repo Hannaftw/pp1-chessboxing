@@ -65,7 +65,6 @@ header h2 {
     text-align: center;
 }
 
-
 /* navigation bar styles */
 nav a {
     color: #fff;
@@ -75,7 +74,14 @@ nav a {
 a .active {
     color: #fff;
 }
- 
+
+#nav-logo {
+    width: auto;
+    height: 50px;
+    border: solid 1px #fff;
+    border-radius: 10%;
+}
+
 /* Hero styles */
 #q-introduction {
     font-style: italic;
