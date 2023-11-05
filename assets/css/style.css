@@ -66,6 +66,22 @@ header h2 {
 }
 
 /* navigation bar styles */
+nav {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: left;
+    background-color: #000;
+    color: #fff;
+    padding: 0px 15px;
+    z-index: 999;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    margin-top: 10px;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
@@ -82,6 +98,32 @@ a .active {
     border-radius: 10%;
 }
 
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    align-items: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Nav toggle - dropdown meny for mobile screens */
+#menu-icon:checked ~ nav {
+  display: block;
+}
+
+#menu-icon {
+  display: none;
+}
+
+.menu-icon-label {
+  font-size: xxx-large;
+}
+
 /* Hero styles */
 #q-introduction {
     font-style: italic;
@@ -94,16 +136,15 @@ border-width: 2px;
 
 /* container styles */
 .container-black {
-    display: flex;
     background-color: #000;
     color: #fff;
 }
 
 .container-white {
-    display: flex;
     background-color: #fff;
     color: #000;
 }
+
 /* Footer styles */
 footer {
     display: flex;
@@ -113,10 +154,6 @@ footer {
 /* Media queries */
 /* Media query: small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {   
-    .container-black {
-        display: block;
-        padding: 0px 15px;
-    }
 }
   
 /* Media query: medium devices (tablets, 768px and up) */
