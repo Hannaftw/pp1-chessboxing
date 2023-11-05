@@ -24,7 +24,7 @@ body {
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    line-height: 1.52px;
+    line-height: 1.52;
 }
 
 /* Section styles */
@@ -156,6 +156,12 @@ footer {
     justify-content: space-between;
 }
 
+.footer-links {
+    justify-content: flex-end;
+    gap: 10vw;
+    flex: 1;
+    align-items: center;
+}
 
 /* Media queries */
 /* Media query: small devices (landscape phones, 576px and up) */
