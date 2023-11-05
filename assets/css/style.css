@@ -1,117 +1,117 @@
 /* import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rye&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* general styles */ 
 /* wildcard to override all default styles */
 * {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
-/* main styles */
-
-/* For semantic elements that should now be displayed */
+/* general styles */ 
+/* For semantic elements that should not be displayed to user*/
 .hidden {
-    display: none;
+  display: none;
 }
 
 body {
-    color: #fff;
-    background-color: #000;
-    font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    line-height: 1.52;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 1.52;
 }
 
 /* container styles */
 .container-black {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 .container-white {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
-/* Section styles */
 /* header styles */
 header .container-black {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;  
-    justify-content: space-between;
-    background-color: #000;
-    color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
 }
 
- header h1 {
-    font-family: 'Rye', cursive;
-    font-size: 2rem;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: 500;
-    text-align: center;
+header h1 {
+  font-family: 'rye', cursive;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px;
 }
 
 header h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1.5;
-    color: #fff;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 10px;
-}
-#header-title {
-    display: block;
+  font-family: 'vollkorn', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
 }
 
-/* header navigation bar styles */
+#header-title {
+  display: block;
+}
+
+/* navigation bar styles */
 nav {
-    display: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: left;
-    background-color: #000;
-    color: #fff;
-    padding: 0px 15px;
-    z-index: 999;
-    position: absolute;
-    top: 10%;
-    right: 0;
-    margin-top: 10px;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: left;
+  background-color: #000;
+  color: #fff;
+  padding: 0px 15px;
+  z-index: 999;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  margin-top: 10px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
+/* NOTE/TO DO l*/
 a .active {
-    color: #fff;
-}
-
-#nav-logo {
-    width: auto;
-    height: 50px;
-    border: solid 1px #fff;
-    border-radius: 10%;
+  color: #ff0000;
 }
 
 .nav-links {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#nav-logo {
+  width: auto;
+  height: 50px;
+  border: solid 1px #fff;
+  border-radius: 10%;
 }
 
 /* Nav toggle - dropdown meny for mobile screens */
@@ -127,49 +127,67 @@ a .active {
   font-size: xxx-large;
 }
 
+/* Main styles */
 /* Hero styles */
 #hero-container-white {
-    display: block;
-    background-color: #fff;
-}
-
-#q-introduction {
-    font-style: italic;
-    background-color: #fff;
-    color: #000;
+  display: block;
+  background-color: #fff;
 }
 
 #hero-image {
-border-color: #fff;
-border-width: 2px;
-width: 250px;
+  border-color: #fff;
+  border-width: 2px;
+  width: 250px;
 }
 
+main h2 {
+  font-family: 'vollkorn', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Title styles */
+main .container-white {
+  display: flex;
+  flex-wrap: wrap;
+}
+#q-introduction {
+  font-size: 12px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  display: block;
+  margin: 10px;
+  font-style: italic;
+}
 
 /* Footer styles */
 footer {
-    display: flex;
-    flex-direction: row;
-    width: 95%;
-    position: fixed;  
-    bottom: 0;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  position: fixed;  
+  bottom: 0;
+  justify-content: space-between;
 }
 
 .footer-links {    
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 10vw;
-    flex: 1;
-    align-items: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 10vw;
+  flex: 1;
+  align-items: center;
 }
 
 .red-icon {
-    color: #ff0000;
+  color: #ff0000;
 }
+
+/* NOTE/TO do: look up if I should include the mobile first comment and remove the media query or not */
 /* Media queries */
 /* Media query: small devices (landscape phones, 576px and up) */
 @media screen and (min-width: 576px) {   
@@ -177,35 +195,38 @@ footer {
   
 /* Media query: medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {   
-    /* header styles   */
-    .container-black {
-        display: flex;
-        padding: 0px 15px;
-    }
+ /* header styles  */
+.container-black {
+  display: flex;
+  padding: 0px 15px;
+}
 
-    nav {
-        display: flex;
-        position: relative;
-    }
-    .nav-links {
-        flex-direction: row;
-        gap: 5vw;
-    }
-    .menu-icon-label {
-        display: none;
-    }
+nav {
+  display: flex;
+  position: relative;
+}
+
+.nav-links {
+  flex-direction: row;
+  gap: 5vw;
+}
+.menu-icon-label {
+  display: none;
+}
 }
 
 /* Media query: large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {   
-    .container-black {
-        display: flex;
-    }
+/* header styles  */
+/* NOTE/TO DO remove .container-black for desktop and laptop it's just placeholder*/
+.container-black {
+  display: flex;
+}
 }
 
 /* Media query: extra large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {   
     .container-black {
-        display: flex;
+      display: flex;
     }
 }
