@@ -57,6 +57,9 @@ header h2 {
     text-align: center;
     margin-top: 10px;
 }
+#header-title {
+    display: block;
+}
 
 /* header navigation bar styles */
 nav {
@@ -173,6 +176,17 @@ footer {
     .container-black {
         display: flex;
         padding: 0px 15px;
+    }
+    nav {
+        display: flex;
+        position: relative;
+    }
+    .nav-links {
+        flex-direction: row;
+        gap: 5vw;
+    }
+    .menu-icon-label {
+        display: none;
     }
 }
 
