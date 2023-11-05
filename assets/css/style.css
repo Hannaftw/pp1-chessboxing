@@ -37,10 +37,9 @@ p {
 header .container-black {
     display: flex;
     flex-direction: row;
-    flex: 1;
-    justify-content: center;
+    flex-wrap: wrap;  
+    justify-content: space-between;
     align-items: left;
-    padding: 2rem;
     background-color: #000;
     color: #fff;
 }
@@ -63,9 +62,10 @@ header h2 {
     color: #fff;
     font-weight: 400;
     text-align: center;
+    margin-top: 10px;
 }
 
-/* navigation bar styles */
+/* header navigation bar styles */
 nav {
     display: none;
     flex-direction: row;
