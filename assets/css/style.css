@@ -118,14 +118,23 @@ ul {
 }
 
 /* Hero styles */
-#q-introduction {
-    font-style: italic;
+#hero-container-white {
+    display: block;
+    background-color: #fff;
 }
 
-#image-hero {
+#q-introduction {
+    font-style: italic;
+    background-color: #fff;
+    color: #000;
+}
+
+#hero-image {
 border-color: #fff;
 border-width: 2px;
+width: 250px;
 }
+
 
 /* container styles */
 .container-black {
