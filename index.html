@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,32 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Meta tags for searh engines -->
     <meta name="description" content="webpage for chessboxing enthusiasts">
-    <meta namw="keywords" content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts">
+    <meta name="keywords" content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts">
      <title>Chessboxing - the ultimate sport</title>
     <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
 
-    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>   
 <main>
+
+  <!-- Header section -->
   <header> 
+
+<!-- Navbar section -->       
   <section class="container-black navbar-header">
+    <!-- h2 added hidden for semantic HTML --> 
+    <h2 class="hidden">Header navigation bar</h2>
     <a href="index.html" 
        aria-label="The page that is active Home">
-    <img src="assets\images\navicon.jpg"
+    <img src="navicon.jpg"
       alt="chessboxing official logo"
       id="nav-logo"
       aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)">
     </a>
-    <input type="checkbox" id="menu-icon" class="menu-icon"/>
+    <input type="checkbox" id="menu-icon" class="menu-icon">
     <label for="menu-icon" class="menu-icon-label">
     <i class="fa-solid fa-bars"></i>
     </label>
-
-    <!-- Header section -->
-<!-- Navbar section -->        
-  <nav>   
+    
+  <nav>
+    <!-- h3 added hidden for semantic HTML --> 
+    <h3 class="hidden">Navigation Bar</h3>   
     <ul class="nav-links">
       <li>
       <a href="index.html" 
@@ -81,13 +87,12 @@
     </div>     
     <div class="hero-quote">
       <!-- inserted q tag for semantic clearer code -->
-      <q class="hidden">For semantic reasons</q>
+      <h2 class="hidden"><q>For semantic reasons</q></h2>
       <p class="q-introduction">
-        "A computer once beat me at chess, <br/>but it was no match for me at kick boxing."
+        "A computer once beat me at chess, <br>but it was no match for me at kick boxing."
       </p>
       <p class="q-source">- Emo Philips
       </p>
-     </div>
     </div> 
   </section>
   
