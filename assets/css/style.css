@@ -129,15 +129,11 @@ a .active {
 
 /* Main styles */
 /* Hero styles */
-#hero-container-white {
-  display: block;
-  background-color: #fff;
-}
 
 #hero-image {
   border-color: #fff;
   border-width: 2px;
-  width: 250px;
+  width: 100%;
 }
 
 main h2 {
@@ -147,19 +143,42 @@ main h2 {
   line-height: 1.5;
 }
 
-/* Title styles */
-main .container-white {
-  display: flex;
+.hero {
+  display: block;
   flex-wrap: wrap;
-}
-#q-introduction {
-  font-size: 12px;
+  flex-grow: 100%;    
   background-color: #fff;
   color: #000;
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 500;
   text-align: center;
-  display: block;
-  margin: 10px;
+  background-color: #fff;
+  color: #000;
+}
+
+.hero-quote {
   font-style: italic;
+  text-align: center;  
+  font-size: 12px;
+  font-style: italic;
+  background-color: #fff; 
+  padding: 10px;
+}
+
+.hero-quote p {
+  background-color: #fff;
+  color: #000;
+}
+
+.q-source {
+ display: block;
+ text-align: right;
+ font-weight: 800;
+ background-color: #fff;
+ color: #000;
+
 }
 
 /* Footer styles */
