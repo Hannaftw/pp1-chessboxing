@@ -94,7 +94,7 @@ nav a {
 }
 
 /* NOTE/TO DO l*/
-a .active {
+.active{
   color: #ff0000;
 }
 
@@ -149,7 +149,7 @@ main h2 {
   flex-grow: 100%;    
   background-color: #fff;
   color: #000;
-
+}
 .hero-title {
   font-size: 1.5rem;
   font-weight: 500;
@@ -179,6 +179,10 @@ main h2 {
  background-color: #fff;
  color: #000;
 
+}
+
+.introduction {
+  margin-bottom: 10vh;
 }
 
 /* Footer styles */
