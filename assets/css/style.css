@@ -194,22 +194,39 @@ footer {
   width: 95%;
   position: fixed;  
   bottom: 0;
-  justify-content: space-between;
+  justify-content: space-between;  
+  margin-bottom: 10px;
 }
 
-.footer-links {    
+footer p {
+  font-size: 10px;
   display: flex;
-  margin: 0;
+  align-items: center;
+}
+
+footer a {
+  font-weight: 800;
+  font-size: 11px;
+  text-decoration: none;
+  color: #ff0000;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.footer-icons {    
+  display: flex;
+  margin-right: 10px;
   padding: 0;
   list-style: none;
   justify-content: flex-end;
-  gap: 10vw;
+  gap: 6vw;
   flex: 1;
   align-items: center;
 }
 
 .red-icon {
   color: #ff0000;
+  font-size: 16px;
 }
 
 /* NOTE/TO do: look up if I should include the mobile first comment and remove the media query or not */
