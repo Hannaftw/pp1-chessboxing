@@ -1,104 +1,131 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Meta tags for searh engines -->
-        <meta name="description" content="webpage for chessboxing enthusiasts">
-        <meta namw="keywords" content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts">
-        <title>Chessboxing - the ultimate sport</title>
-        <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta tags for searh engines -->
+    <meta name="description" content="webpage for chessboxing enthusiasts">
+    <meta
+      name="keywords"
+      content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts">
 
-        <!-- Stylesheet NOTE/TO DO link to CSS stylesheet -->
-        <link rel="stylesheet" href="assets\css\style.css">
-    </head>
-    <!-- NOTE/TO DO create page about chessboxingboxing -->
+    <title>Chessboxing - the ultimate sport</title>
+    <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
+    
+    <!-- Stylesheet NOTE/TO DO link to CSS stylesheet -->
+    <link rel="stylesheet" href="assets\css\style.css" />
+  </head>
 
-     <body>
+
+  <body>
+    <main>
     <!-- Header section -->
     <header>
-        <section class="container-black navbar-header">
-    <a href="index.html" 
-       aria-label="The page that is active Home">
-    <img src="assets\images\navicon.jpg"
-      alt="chessboxing official logo"
-      id="nav-logo"
-      aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)">
-    </a>
-    <input type="checkbox" id="menu-icon" class="menu-icon"/>
-    <label for="menu-icon" class="menu-icon-label">
-    <i class="fa-solid fa-bars"></i>
-    </label>
+      <!-- Navbar section -->
+      <nav>
+        <section class="navbar-header">
+        <!-- h2 added hidden for semantic HTML -->
+          <h2 class="hidden">Header navigation bar</h2>
+          <a href="index.html" aria-label="The page that is active Home">
+            <img
+            src="assets/images/navicon.webp"
+            alt="chessboxing official logo"
+            id="nav-logo"
+            aria-label="Official logo of the Chessboxing Federation, a chesspiece creating the letter B">
+        </a>
+        <input type="checkbox" id="menu-icon" class="menu-icon">
+          <label for="menu-icon" class="menu-icon-label">
+          <i class="fa-solid fa-bars"></i>
+          </label>
 
-    <!-- Header section -->
-<!-- Navbar section -->        
-  <nav>   
-    <ul class="nav-links">
-      <li>
-      <a href="index.html" 
-        aria-label="The page that is active Home">
-        Home
-      </a>
-      </li>   
-      <li>
-        <a href="boxing.html"
-        aria-label="navigate to the page Boxing">
-        Boxing
-      </a>
-      </li>
-      <li>
-      <a href="chess.html"
-        aria-label="navigate to the page Chessboxing">
-        Chess
-      </a>
-      </li>
-      <li>
-      <a href="chessboxing.html"
-        class="active"
-        aria-label="navigate to the page Chessboxing">
-        Chessboxing
-      </a>
-      </li>
-    </ul>
-  </nav>
-  </section>
-    </header> 
+        <!--Navigation bar links -->
+        <!-- h3 added hidden for semantic HTML -->
+        <h3 class="hidden">Navigation Bar with links for the sites different pages</h3>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" aria-label="navigate to the page Home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="boxing.html" aria-label="navigate to the page Boxing">
+                Boxing
+              </a>
+            </li>
+            <li>
+              <a href="chess.html" aria-label="navigate to the page Chess">
+                Chess
+              </a>
+            </li>
+            <li>
+              <a
+                href="chessboxing.html"
+                class="active"
+                aria-label="The page that is active Chessboxing">
+                Chessboxing
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Title section -->
+      <section class="header-title">
+        <h1>CHESSBOXING</h1>
+        <h2>- the ultimate sport?</h2>
+      </section>
+    </header>
     
-    <!-- Main Content-->
-    <main>
     </main>
-
     <!-- Footer section -->
     <footer>
-      <p>Copyright text</p> 
-      <ul class ="footer-links">
-        <li>          
-          <a href="https://www.github.com/"
+      <p>
+        Made by
+        <a
+          href="https://github.com/Hannaftw"
+          target="_blank"
+          rel="noopener"
+          aria-label="Visit Hannaftw's GitHub page (opens in a new tab)"
+        >
+          Hanna Bergsten
+        </a>
+      </p>
+      <ul class="footer-icons">
+        <li>
+          <a
+            href="https://www.github.com/"
             target="_blank"
             rel="noopener"
-            aria-label="Visit our github page (opens in a new tab)">
+            aria-label="Visit our github page (opens in a new tab)"
+          >
             <i class="fa-brands fa-github red-icon"></i>
           </a>
         </li>
-        <li>          
-          <a href="https://www.linkedin.com/"
+        <li>
+          <a
+            href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener"
-            aria-label="Visit our LinkedIn page (opens in a new tab)">
+            aria-label="Visit our LinkedIn page (opens in a new tab)"
+          >
             <i class="fa-brands fa-linkedin red-icon"></i>
           </a>
         </li>
-        <li>          
-          <a href="https://www.instagram.com/"
+        <li>
+          <a
+            href="https://www.instagram.com/"
             target="_blank"
             rel="noopener"
-            aria-label="Visit our Instagram page (opens in a new tab)">
-          <i class="fa-brands fa-instagram red-icon"></i>
+            aria-label="Visit our Instagram page (opens in a new tab)"
+          >
+            <i class="fa-brands fa-instagram red-icon"></i>
           </a>
         </li>
-    </ul>
+      </ul>
     </footer>
-    <script src="https://kit.fontawesome.com/643645f09b.js" crossorigin="anonymous"></script>
-    </body>
+    <script
+      src="https://kit.fontawesome.com/643645f09b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
