@@ -133,7 +133,7 @@ nav a {
 .hero {
   height: 100vw;
   width: 100%;
-  background: url('../images/hero-mikevs-medium.jpg') no-repeat center
+  background: url('..assets\images\hero-mikevs-medium.webp') no-repeat center
     center/cover;
   position: relative;
   margin: 10px 0;
