@@ -29,9 +29,19 @@ p {
   color: #fff;
 }
 
+.container-black a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .container-white {
   background-color: #fff;
   color: #000;
+}
+
+.container-white a {
+  color: #000;
+  text-decoration: none;
 }
 
 /* header styles */
@@ -175,17 +185,54 @@ nav a {
 }
 
 /* Introduction styles */
-.introduction h2 {
-  font-size: 18px;
-  line-height: 1.5;
+.introduction {
   font-weight: 500;
-  text-align: center;
+  margin: 0px;
 }
 
-#intro-text {
-  padding: 10px;
-  font-weight: 400;
+.introduction h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 800;
   text-align: center;
+  padding: 10px 5px 0px;
+  margin: 10px 0px 0px;
+}
+
+.introduction h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 10px 0px;
+  margin: 0;
+}
+
+.introduction p {
+  text-align: left;
+  line-height: 1.5;
+  padding: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.introduction ul {
+  list-style: disc;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-align: left;
+  padding: 5px 15px 15px;
+  margin: 0;
+}
+
+.introduction a {
+  font-weight: 550;
+}
+.introduction li {
+  padding: 2px;
+  margin-left: 10px;
 }
 
 /* Footer styles */
@@ -196,9 +243,8 @@ footer {
   position: sticky;
   justify-content: space-between;
   flex-shrink: 0;
-  padding: 5px;
+  padding: 0px 10px;
 }
-
 footer p {
   font-size: 11px;
   display: flex;
@@ -286,11 +332,44 @@ footer a {
   }
 
   .introduction h2 {
-    font-size: 30px;
-    font-weight: 600;
-    width: 100%;
+    font-size: 36px;
+    font-weight: 800;
   }
 
+  .introduction h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 15px 5px;
+  }
+
+.introduction p {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.introduction ul {
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.introduction li {
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.introduction img {
+  margin-top: 10px;
+}
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    position: sticky;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 0px 10px;
+}
   footer a {
     font-size: 20px;
     font-weight: 600;
