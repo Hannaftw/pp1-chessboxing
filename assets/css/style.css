@@ -279,13 +279,15 @@ footer a {
 /* Media queries */
 /* Media query: medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-  /* header styles  */
+/* General styles */ 
   p {
     font-size: 18px;
     font-weight: 600;
   }
 
-  header h1 {
+
+/* Header styles  */
+header h1 {
     font-size: 48px;
     line-height: 1.5;
     color: #fff;
@@ -294,7 +296,7 @@ footer a {
     margin: 2px;
   }
 
-  header h2 {
+header h2 {
     font-size: 32px;
     font-style: italic;
     line-height: 1.5;
@@ -302,8 +304,9 @@ footer a {
     text-align: center;
     padding: 3px;
     margin: 3px 0px;
-  }
+}
 
+  /* Navigation bar styles */
   nav {
     display: block;
     position: relative;
@@ -326,11 +329,14 @@ footer a {
     display: none;
   }
 
-  .hero-quote {
+/* Main styles */
+/* Hero styles */
+.hero-quote {
     font-size: 150%;
     bottom: 300px;
-  }
+}
 
+/* Introduction styles */
   .introduction h2 {
     font-size: 36px;
     font-weight: 800;
@@ -342,26 +348,28 @@ footer a {
     padding: 20px 15px 5px;
   }
 
-.introduction p {
-  font-size: 18px;
-  padding: 20px;
-}
+  .introduction p {
+    font-size: 18px;
+    padding: 20px;
+  }
 
-.introduction ul {
-  font-size: 18px;
-  padding: 20px;
-  margin-bottom: 10px;
-}
+  .introduction ul {
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
 
-.introduction li {
-  padding: 5px;
-  margin-left: 20px;
-}
+  .introduction li {
+    padding: 5px;
+    margin-left: 20px;
+  }
 
-.introduction img {
-  margin-top: 10px;
-}
-  footer {
+  .introduction img {
+    margin-top: 10px;
+  }
+
+/* footer styles */
+footer {
     display: flex;
     flex-direction: row;
     width: 95%;
@@ -370,6 +378,7 @@ footer a {
     flex-shrink: 0;
     padding: 0px 10px;
 }
+
   footer a {
     font-size: 20px;
     font-weight: 600;
@@ -390,17 +399,31 @@ footer a {
   }
 }
 
-/* Media query: large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-  /* header styles  */
-  /* NOTE/TO DO remove .container-black for desktop and laptop it's just placeholder*/
+/* Media query: large devices (laptops, 1024px and up) */
+@media screen and (min-width: 1024px) {
+/* General styles */
+.container-black {
+    display: flex;
+  }
+
+.container-white {
+    display: flex;
+  }
+}
+
+/* Media query:  x-large devices (Desktop and large laptops , 1400px and up) */
+@media screen and (min-width: 1400px) {
+/* General styles */
+/* NOTE/TO DO place-holder content remove*/
   .container-black {
     display: flex;
   }
 }
 
-/* Media query: extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+/* Media query: xx-large deviced (Desktop large monitor, 1920px and up) */
+@media screen and (min-width: 1920px) {
+/* General styles */
+/* NOTE/TO DO place-holder content remove*/
   .container-black {
     display: flex;
   }
