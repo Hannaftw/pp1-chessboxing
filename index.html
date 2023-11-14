@@ -8,6 +8,7 @@
     <meta
       http-equiv="X-UA-Compatible"
       content="ie=edge" />
+
     <!-- Meta tags for searh engines -->
     <meta
       name="description"
@@ -17,6 +18,7 @@
       content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts" />
 
     <title>Chessboxing - the ultimate sport</title>
+
     <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
 
     <link
@@ -25,175 +27,192 @@
   </head>
 
   <body>
+    <!-- Header section -->
+    <header>
+      <!-- Navbar section -->
+      <section class="navbar">
+        <!-- h2 added hidden for semantic HTML -->
+        <h2 class="hidden">Header navigation bar</h2>
+        <a
+          href="index.html"
+          aria-label="The page that is active Home">
+          <img
+            src="assets/images/navicon.webp"
+            alt="chessboxing official logo"
+            id="nav-logo"
+            aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)" />
+        </a>
+        <input
+          type="checkbox"
+          id="menu-icon"
+          class="menu-icon" />
+        <label
+          for="menu-icon"
+          class="menu-icon-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav>
+          <!-- h3 added hidden for semantic HTML -->
+          <h3 class="hidden">Navigation Bar links</h3>
+          <ul class="nav-links">
+            <li>
+              <a
+                href="index.html"
+                class="active"
+                aria-label="The page that is active Home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="boxing.html"
+                aria-label="navigate to the page Boxing">
+                Boxing
+              </a>
+            </li>
+            <li>
+              <a
+                href="chess.html"
+                aria-label="navigate to the page Chessboxing">
+                Chess
+              </a>
+            </li>
+            <li>
+              <a
+                href="chessboxing.html"
+                aria-label="navigate to the page Chessboxing">
+                Chessboxing
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Main section -->
     <main>
-      <!-- Header section -->
-      <header>
-        <!-- Navbar section -->
-        <section class="navbar-header">
-          <!-- h2 added hidden for semantic HTML -->
-          <h2 class="hidden">Header navigation bar</h2>
-          <a
-            href="index.html"
-            aria-label="The page that is active Home">
-            <img
-              src="assets\images\navicon.webp"
-              alt="chessboxing official logo"
-              id="nav-logo"
-              aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)" />
-          </a>
-          <input
-            type="checkbox"
-            id="menu-icon"
-            class="menu-icon" />
-          <label
-            for="menu-icon"
-            class="menu-icon-label">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-
-          <nav>
-            <!-- h3 added hidden for semantic HTML -->
-            <h3 class="hidden">Navigation Bar links</h3>
-            <ul class="nav-links">
-              <li>
-                <a
-                  href="index.html"
-                  class="active"
-                  aria-label="The page that is active Home">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="boxing.html"
-                  aria-label="navigate to the page Boxing">
-                  Boxing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="chess.html"
-                  aria-label="navigate to the page Chessboxing">
-                  Chess
-                </a>
-              </li>
-              <li>
-                <a
-                  href="chessboxing.html"
-                  aria-label="navigate to the page Chessboxing">
-                  Chessboxing
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-
-        <!-- Title section -->
-        <section class="header-title">
-          <h1>CHESSBOXING</h1>
-          <h2>- the ultimate sport?</h2>
-        </section>
-      </header>
+      <!-- Title section NOTE/TO DO - what should this be semantically? -->
+      <div class="title">
+        <h1>CHESSBOXING</h1>
+        <h2>- the ultimate sport?</h2>
+      </div>
 
       <!-- Hero section / hero image -->
       <section class="hero">
         <div class="hero-quote">
-          <!-- inserted q tag for semantic HTML -->
-          <h2 class="hidden"><q>For semantic reasons</q></h2>
+          <!-- inserted h2 and q tag for semantic HTML -->
+          <h2 class="hidden">
+            <q> For semantic reasons </q>
+          </h2>
           <p class="q-hero">
-            "A computer once beat me at chess, <br />
+            "A computer once beat me at chess,
+            <br />
             but it was no match for me at kick boxing."
           </p>
           <p class="q-source">- Emo Philips</p>
         </div>
       </section>
 
-      <!-- Introduction section -->
-      <!-- // NOTE/TO DO - placeholder text -->
+      <!-- Introduction -->
       <section class="introduction">
-        <div class="container-white">
-          <h2 class="container-white">
-            Mental mastery meets
-            <br />
-            physical prowess
-          </h2>
-          <p class="container-white">
-            <a
-              href="chessboxing.html"
-              aria-label="navigate to the page Chessboxing">
-              Chessboxing
-            </a>
-            ... it may seem obvious what it is, right? It is all there in the
-            name:
-            <a
-              href="chess.html"
-              aria-label="navigate to the page Chess">
-              chess
-            </a>
-            and
-            <a
-              href="boxing.html"
-              aria-label="navigate to the page Boxing">
-              boxing!
-            </a>
-            Anyone can deduce that, right? It seems so simple but… how do these
-            two very different sports get combined into one?
-            <br />
-            <br />
-            You may ask : Why have I never heard of this? Is it a real sport or
-            is this a practical joke? Who would think of such a thing? But,
-            maybe the most common and burning question may be: <i>why?</i>
-          </p>
-          <p class="introduction">
-            If you are a chess player, a boxing enthusiast or perhaps just
-            curious, this site will be your gateway to this ultimate sport.
-            Discover the rules, history, facts and sometimes strange stories
-            that define the world of chessboxing and learn some fun facts along
-            the way.
-            <br />
-            <br />
-            To truly appreciate the skill and dedication that chessboxing
-            requires, we may need to remind ourselves what it takes to master
-            these even one of event with but important looks into
-            <a
-              href="chess.html"
-              aria-label="navigate to the page chess">
-              chess
-            </a>
-            and
-            <a
-              href="boxing.html"
-              aria-label="navigate to the page Boxing">
-              boxing.
-            </a>
-            Should your interest not have skyrocketed, a bit more information
-            about the main event is in order.
-          </p>
+        <div class="intro-text">
+          <div class="container-white">
+            <h2>
+              Mental mastery meets
+              <br />
+              physical prowess
+            </h2>
+            <p>
+              <a
+                href="chessboxing.html"
+                aria-label="navigate to the page Chessboxing">
+                Chessboxing
+              </a>
+              ... it may seem obvious what it is, right? It is all there in the
+              name:
+              <a
+                href="chess.html"
+                aria-label="navigate to the page Chess">
+                chess
+              </a>
+              and
+              <a
+                href="boxing.html"
+                aria-label="navigate to the page Boxing">
+                boxing!
+              </a>
+              Anyone can deduce that, right? It seems so simple but… how do
+              these two very different sports get combined into one?
+              <br />
+              <br />
+              You may ask : Why have I never heard of this? Is it a real sport
+              or is this a practical joke? Who would think of such a thing? But,
+              maybe the most common and burning question may be: <i>why?</i>
+            </p>
+          </div>
+          <div class="container-black">
+            <p>
+              If you are a chess player, a boxing enthusiast or perhaps just
+              curious, this site will be your gateway to this ultimate sport.
+              Discover the rules, history, facts and sometimes strange stories
+              that define the world of chessboxing and learn some fun facts
+              along the way.
+              <br />
+              <br />
+              To truly appreciate the skill and dedication that chessboxing
+              requires, we may need to remind ourselves what it takes to master
+              these even one of event with but important looks into
+              <a
+                href="chess.html"
+                aria-label="navigate to the page chess">
+                chess
+              </a>
+              and
+              <a
+                href="boxing.html"
+                aria-label="navigate to the page Boxing">
+                boxing.
+              </a>
+              Should your interest not have skyrocketed, a bit more information
+              about the main event is in order.
+            </p>
+          </div>
         </div>
-          <h3 class="introduction">
-            A brief introduction to chessboxing
-          </h3>
-          <ul class="introduction">
-            <li>
-              <b>What is it?</b> A hybrid sport that combines alternating rounds
-              of boxing and chess.
-            </li>
-            <li>
-              <b>Who would do such a thing?</b>
-              There are several amateur clubs but also official international
-              competitions managed by The World Chessboxing Organization (WCBO).
-              (the name of the international foundation, link new tab). To
-              compete professionally a player needs to have both knowledge and
-              experience of chess and be deemed physically fit enough for
-              boxing.
-            </li>
-            <li>
-              <b>How do you win?</b> By knocking out your opponent in the boxing
-              ring or defeating them on the chessboard, you do not have to win
-              both events in order to win the match.
-            </li>
-          </ul>
-    
+        <div class="intro-facts">
+          <div class="container-white">
+            <h3>A brief introduction to chessboxing</h3>
+            <ul>
+              <li>
+                <b>What is it?</b> A hybrid sport that combines alternating
+                rounds of boxing and chess.
+              </li>
+              <li>
+                <b>Who would do such a thing?</b>
+                There are several amateur clubs but also official international
+                competitions managed by The World Chessboxing Organization
+                (WCBO). (the name of the international foundation, link new
+                tab). To compete professionally a player needs to have both
+                knowledge and experience of chess and be deemed physically fit
+                enough for boxing.
+              </li>
+              <li>
+                <b>How do you win?</b> By knocking out your opponent in the
+                boxing ring or defeating them on the chessboard, you do not have
+                to win both events in order to win the match.
+              </li>
+            </ul>
+          </div>
+          <div class="container-black">
+            <img
+              src="assets/images/cb-tampachessboxingacademy-original.webp"
+              alt="chess pieces boxing"
+              aria-label="Two chess pieces wearing red gloves boxing" />
+          </div>
+        </div>
+      </section>
+
+      <div class="summary">
         <div class="container-white">
           <p>
             Can you picture it? The battle of wits and the intricate dance of
@@ -212,14 +231,14 @@
               boxing
             </a>
             rounds. It almost sounds too good to be true, but you are not
-            dreaming! 
-            <br>
-            <br>
-            Let us explore this wonderful and unlikely sport further!
-            Where would you like to start your journey? Refreshen your knowledge
-            about chess (link), find out about the history and the current state
-            of boxing (link) or perhaps you are brave enough to dive straight
-            into the deep end and explore the
+            dreaming!
+            <br />
+            <br />
+            Let us explore this wonderful and unlikely sport further! Where
+            would you like to start your journey? Refreshen your knowledge about
+            chess (link), find out about the history and the current state of
+            boxing (link) or perhaps you are brave enough to dive straight into
+            the deep end and explore the
             <a
               href="chessboxing.html"
               aria-label="navigate to the page Chessboxing">
@@ -227,8 +246,18 @@
             </a>
           </p>
         </div>
-      </section>
-      <img src="assets\images\cb-tampachessboxingacademy-original.webp" width="100%">
+        <div class="container-black">
+          <p>
+            This is placeholder text. <br />
+            This is placeholder text. <br />
+            This is placeholder text. <br />
+            This is placeholder text. <br />
+            This is placeholder text. <br />
+            This is placeholder text. <br />
+            This is placeholder text. <br />
+          </p>
+        </div>
+      </div>
     </main>
 
     <!-- Footer section -->

@@ -27,6 +27,7 @@ p {
 .container-black {
   background-color: #000;
   color: #fff;
+  width: 100%;
 }
 
 .container-black a {
@@ -37,6 +38,7 @@ p {
 .container-white {
   background-color: #fff;
   color: #000;
+  width: 100%;
 }
 
 .container-white a {
@@ -45,14 +47,14 @@ p {
 }
 
 /* Header styles */
-header .navbar-header {
+.navbar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-header h1 {
+.title h1 {
   font-family: 'rye', cursive;
   font-size: 32px;
   line-height: 1.5;
@@ -62,7 +64,7 @@ header h1 {
   margin: 2px;
 }
 
-header h2 {
+.title h2 {
   font-size: 22px;
   font-style: italic;
   line-height: 1.5;
@@ -230,9 +232,23 @@ nav {
 .introduction a {
   font-weight: 550;
 }
+
 .introduction li {
   padding: 2px;
   margin-left: 10px;
+}
+
+.container-black img {
+  width: 100%;
+}
+
+.summary p {
+  text-align: left;
+  line-height: 1.5;
+  padding: 15px;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0px;
 }
 
 /* Footer styles */
@@ -368,6 +384,9 @@ header h2 {
     margin-top: 10px;
   }
 
+    .container-black img {
+      width: 100%;
+    }
 /* footer styles */
 footer {
     display: flex;
