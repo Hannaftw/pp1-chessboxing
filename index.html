@@ -17,7 +17,7 @@
       name="keywords"
       content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts" />
 
-    <title>Chessboxing - the ultimate sport</title>
+    <title>Chessboxing - the ultimate sport?</title>
 
     <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
 
@@ -93,14 +93,13 @@
     <!-- Main section -->
     <main>
       <!-- Title section NOTE/TO DO - what should this be semantically? -->
-      <div class="title">
-        <h1>CHESSBOXING</h1>
-        <h2>- the ultimate sport?</h2>
-      </div>
-
-      <!-- Hero section / hero image -->
+        <!-- Hero section / hero image -->
       <section class="hero">
-        <div class="hero-quote">
+        <div class="title">
+          <h1>CHESSBOXING</h1>
+          <h2>- the ultimate sport?</h2>
+        </div>
+        <div class="hero-section">
           <!-- inserted h2 and q tag for semantic HTML -->
           <h2 class="hidden">
             <q> For semantic reasons </q>
@@ -110,18 +109,17 @@
             <br />
             but it was no match for me at kick boxing."
           </p>
-          <p class="q-source">- Emo Philips</p>
+          <p class="q-hero" id="q-source">- Emo Philips</p>
         </div>
+      </div>
       </section>
 
       <!-- Introduction -->
       <section class="introduction">
         <div class="intro-text">
-          <div class="container-white">
+          <div class="container-black">
             <h2>
-              Mental mastery meets
-              <br />
-              physical prowess
+              Mental mastery meets physical prowess 
             </h2>
             <p>
               <a
@@ -151,16 +149,15 @@
               maybe the most common and burning question may be: <i>why?</i>
             </p>
           </div>
-          <div class="container-black">
+          <div class="container-white">
             <p>
               If you are a chess player, a boxing enthusiast or perhaps just
               curious, this site will be your gateway to this ultimate sport.
               Discover the rules, history, facts and sometimes strange stories
               that define the world of chessboxing and learn some fun facts
-              along the way.
-              <br />
-              <br />
-              To truly appreciate the skill and dedication that chessboxing
+              along the way.</p>
+         
+              <p>To truly appreciate the skill and dedication that chessboxing
               requires, we may need to remind ourselves what it takes to master
               these even one of event with but important looks into
               <a
@@ -174,13 +171,42 @@
                 aria-label="navigate to the page Boxing">
                 boxing.
               </a>
-              Should your interest not have skyrocketed, a bit more information
-              about the main event is in order.
+            Should your interest not have skyrocketed, a bit more informationabout the      
+              <a
+                href="chessboxing.html"
+                aria-label="navigate to the page chessboxing">
+                main event
+              </a> 
+              is in order.
             </p>
           </div>
         </div>
         <div class="intro-facts">
-          <div class="container-white">
+          <!-- Two containers with same contant but separate ID for styles for diffeent screen sizes -->
+          <div class="container-white" id="facts-white">
+            <h3>A brief introduction to chessboxing</h3>
+            <ul>
+              <li>
+                <b>What is it?</b> A hybrid sport that combines alternating
+                rounds of boxing and chess.
+              </li>
+              <li>
+                <b>Who would do such a thing?</b>
+                There are several amateur clubs but also official international
+                competitions managed by The World Chessboxing Organization
+                (WCBO). (the name of the international foundation, link new
+                tab). To compete professionally a player needs to have both
+                knowledge and experience of chess and be deemed physically fit
+                enough for boxing.
+              </li>
+              <li>
+                <b>How do you win?</b> By knocking out your opponent in the
+                boxing ring or defeating them on the chessboard, you do not have
+                to win both events in order to win the match.
+              </li>
+            </ul>
+          </div>
+          <div class="container-black" id="facts-black">
             <h3>A brief introduction to chessboxing</h3>
             <ul>
               <li>
