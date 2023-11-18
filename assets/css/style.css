@@ -12,6 +12,7 @@ body {
   background-color: #000;
   font-family: 'Montserrat', sans-serif;
   display: block;
+  padding: 5px;
 }
 
 /* Main styles */
@@ -285,10 +286,16 @@ footer a {
 /* Media query: medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
 /* General styles */ 
+body {
+ padding: 15px;
+ margin: 0px;
+}
+
 p {
   font-size: 18px;
   font-weight: 600;
 }
+
 
 /* Header styles  */
 .title h1 {
@@ -312,9 +319,13 @@ nav {
   display: flex;
   position: relative;  justify-content: center;
   align-items: center;
-  margin-right: 20px;
+  margin-right:20px;
 }
 
+.navbar {
+  padding: 10px;
+  margin-bottom: 10px;
+}
 .nav-links {
   flex-direction: row;
   gap: 5vw;
@@ -385,7 +396,7 @@ nav {
   }
 
   .introduction img {
-    margin-top: 10px;
+width: 100%;
   }
 
 
@@ -430,6 +441,7 @@ p {
     width: auto;
     justify-content: center;
     align-items: center;
+
   }
 
 .container-white {
@@ -437,7 +449,7 @@ p {
     flex: 1;
     height: 50vw;
     width: auto;
-    margin: 0px;
+   
     justify-content: center;
     align-items: center;
   }
@@ -472,8 +484,11 @@ p {
 
 .hero-section {
   flex: 1;
-  height: 50vw; 
+     justify-content: center;
+    align-items: center;
   margin: 0px;
+     height: 50vw;
+    width: auto;
 }
 
 .q-hero {
@@ -545,7 +560,7 @@ p {
 
 .summary a {
   font-weight: 750;
-  display: flex;
+  display: inline;
 }
 }
 /* Media query:  x-large devices (Desktop and large laptops , 1400px and up) */
