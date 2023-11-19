@@ -12,6 +12,7 @@ body {
   background-color: #000;
   font-family: 'Montserrat', sans-serif;
   display: block;
+  padding: 5px;
 }
 
 /* Main styles */
@@ -22,7 +23,7 @@ p {
   font-weight: 400;
 }
 
-p a { 
+p a {
   text-decoration: none;
   font-weight: 650;
   display: inline;
@@ -58,6 +59,10 @@ p a {
   justify-content: space-between;
 }
 
+.title {
+  display: block;
+}
+
 .title h1 {
   font-family: 'rye', cursive;
   font-size: 32px;
@@ -78,10 +83,6 @@ p a {
   margin: 2px;
 }
 
-.title {
-  display: block;
-}
-
 /* navigation bar styles */
 nav {
   display: none;
@@ -98,10 +99,10 @@ nav {
   margin: 5px;
 }
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .active {
   color: #ff0000;
@@ -147,12 +148,13 @@ nav {
 
 /* Hero styles */
 .hero-section {
- height: 100vw;
-  background: url("../images/hero-mikevs-medium.webp") no-repeat center center/cover;
+  height: 100vw;
+  background: url('../images/hero-mikevs-medium.webp') no-repeat center
+  center/cover;
   background-size: contain;
   position: relative;
-  display: flex; 
-  flex-direction: column;  
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -179,52 +181,54 @@ nav {
 }
 /* Main styles */
 /* Introduction styles */
-#facts-white {
-  display: none;
+.introduction-text p {
+  padding: 10px;
+  margin: 0px;
 }
 
-.introduction h2 {
+.introduction-text h2 {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 700;
   text-align: center;
-  padding: 10px 5px 0px;
+  padding: 10px;
   margin: 0;
 }
 
-.introduction h3 {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 700;
-  text-align: center;
-  padding: 10px 10px 0px;
-  margin: 0;
+/* Facts styles */
+#facts-white {
+  display: none;
 }
 
-.introduction p {
-  text-align: left;
-  line-height: 1.5;
-  padding: 15px;
-  font-weight: 500;
-  margin: 0px;
-}
-
-.introduction ul {
+.intro-facts ul {
   list-style: disc;
   font-size: 11px;
   line-height: 1.5;
   font-weight: 500;
   text-align: left;
-  padding: 5px 15px 15px;
+  padding: 10px;
   margin: 0;
 }
 
-.introduction a {
+.facts-black {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.intro-facts h3 {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.intro-facts a {
   font-weight: 550;
 }
 
-.introduction li {
-  padding: 2px;
+.intro-facts li {
   margin-left: 10px;
 }
 
@@ -232,6 +236,11 @@ nav {
   width: 100%;
 }
 
+#img-text {
+  display: none;
+}
+
+/* Summary styles */
 .summary p {
   text-align: left;
   line-height: 1.5;
@@ -240,157 +249,189 @@ nav {
   margin: 0px;
 }
 
+.summary-text {
+  display: none;
+}
 /* Footer styles */
 footer {
   display: flex;
   flex-direction: row;
   width: 100%;
   position: sticky;
-  justify-content: space-between;
-  padding: 0px 10px;
-}
-
-footer p {
-  font-size: 11px;
-  display: flex;
   align-items: center;
-}
+  justify-content: center;
+  padding-top: 15px;
+}  
+  .footer-text {
+    flex: 1;
+    flex-direction: column;
+  }
+
+.footer-text p {
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
 
 footer a {
   font-weight: 800;
   font-size: 12px;
   text-decoration: none;
   color: #ff0000;
-  margin-left: 5px;
-  font-size: 10px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-icons {
-  display: flex;
-  margin-right: 20px;
-  padding: 0;
-  list-style: none;
-  justify-content: flex-end;
-  gap: 6vw;
-  flex: 1;
-  align-items: center;
-}
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+    gap: 5vw;
+  }
+
 
 .red-icon {
   color: #ff0000;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 /* Media queries */
 /* Media query: medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-/* General styles */ 
-p {
-  font-size: 18px;
-  font-weight: 600;
-}
+  /* General styles */
+  body {
+    padding: 20px;}
+ 
+  p {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+  }
 
-/* Header styles  */
-.title h1 {
+  /* Header styles  */
+  .title h1 {
     font-size: 55px;
     font-weight: 500;
     text-align: center;
     margin: 2px;
   }
 
-.title h2 {
+  .title h2 {
     font-size: 32px;
     font-weight: 600;
-}
+  }
 
-/* Navigation bar styles */  
-.menu-icon-label {
+  /* Navigation bar styles */
+  .menu-icon-label {
     display: none;
   }
 
-nav {
-  display: flex;
-  position: relative;  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-}
+  nav {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+  }
 
-.nav-links {
-  flex-direction: row;
-  gap: 5vw;
-  border: none;
-  font-weight: 600;
-}
+  .nav-links {
+    flex-direction: row;
+    gap: 5vw;
+    border: none;
+    font-weight: 600;
+  }
 
   .nav-links li {
     border: none;
     margin: 0;
     padding: 0;
     font-size: 18px;
-    }
+  }
 
-#nav-logo {
-  width: auto;
-  height: 65px;
-}
+  #nav-logo {
+    width: auto;
+    height: 65px;
+  }
 
-/* Main styles */
-.title {
-  display: block;
-}
-/* Hero styles */
+  /* Main styles */
+  .title {
+    display: block;
+  }
 
-.hero-section {
+  /* Hero styles */
+  .hero-section {
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
-}
-
-.hero-section p {
-  font-size: 20px;
-  width: 85%;
-  font-style: italic;
-  text-align: center;
-}
-
-/* Introduction styles */
-  .introduction h2 {
-    font-size: 30px;
-    font-weight: 700;
   }
 
-  .introduction h3 {
-    font-size: 30px;
-    font-weight: 700;
+  .hero-section p {
+    font-size: 20px;
+    width: 85%;
+    font-style: italic;
+    text-align: center;
   }
 
-  .introduction p {
+  /* Introduction styles */
+  .introduction a {
+    font-weight: 750;
+  }  
+
+.introduction p {
+  padding: 25px;
+}
+  .introduction ul {
+    font-size: 18px;
     padding: 20px;
   }
-
- .introduction a {
-  font-weight: 750;
+  
+  .introduction-text h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 5px;
   }
- 
-  .introduction ul {
+
+  /* Facts styles */
+  #facts-black {
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .intro-facts h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+    padding-top: 10px;
+  }
+
+.intro-facts img {
+  padding-bottom: 10px;
+}
+
+#img-text {
+  display: none;
+}
+
+/* Summary styles */ 
+.intro-facts ul {
     font-size: 18px;
     padding: 20px;
     margin-bottom: 10px;
   }
 
-  .introduction li {
-    padding: 5px;
-    margin-left: 20px;
-  }
-
-  .introduction img {
-    margin-top: 10px;
-  }
-
-
 /* footer styles */
-  footer a {
+footer {
+  padding: 5px;
+}
+
+footer a {
     font-size: 22px;
     font-weight: 600;
   }
@@ -398,32 +439,39 @@ nav {
   footer p {
     font-size: 20px;
     font-weight: 600;
+    margin: 0px;
+    padding-top: 15px;
   }
 
- .footer-icons li {
+  .footer-icons {
+    margin-right: 20px;
+  }
+
+  .footer-icons li {
     font-size: 32px;
     gap: 2vw;
   }
 
-.red-icon {
-  font-size: 32px;
-}
+  .red-icon {
+    font-size: 36px;
+  }
 }
 
 /* Media query: large devices (laptops, 1024px and up) */
 @media screen and (min-width: 1024px) {
-/* General styles */
-body {
-  display: block;
-}
+  /* General styles */
+  body {
+    display: block;
+  }
 
-p {
-  line-height: 1.5;
-  font-size: 17px;
-  font-weight: 600;
-}
-/* Container styles */
-.container-black {
+  p {
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  /* Container styles */
+  .container-black {
     display: flex;
     flex: 1;
     height: 50vw;
@@ -432,7 +480,7 @@ p {
     align-items: center;
   }
 
-.container-white {
+  .container-white {
     display: flex;
     flex: 1;
     height: 50vw;
@@ -442,126 +490,226 @@ p {
     align-items: center;
   }
 
-/* Header styles */ 
-/* Navigation bar styles */
-#nav-logo {
-  width: auto;
-  height: 90px;
-  border: none;
-  padding: 5px;
-}
-
-.navbar {
-  border: 1px solid #fff;
-  border-radius: 10px;
-  margin: 20px;
-}
-
-.nav-links a {
-  font-size: 22px;
-}
-
-/* Main styles */
-/* Hero styles */
-.hero {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  }
-
-.hero-section {
-  flex: 1;
-  height: 50vw; 
-  margin: 0px;
-}
-
-.q-hero {
-   font-size: 24px;
-  }
-
-.title {
+  .container-black img {
+    display: flex;
     flex: 1;
   }
 
-/* Introduction styles */
-.introduction .container-white {
+  /* Header styles */
+  /* Navigation bar styles */
+  #nav-logo {
+    width: auto;
+    height: 90px;
+    border: none;
+    padding: 5px;
+  }
+
+  .navbar {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+  .nav-links a {
+    font-size: 22px;
+  }
+
+  /* Main styles */
+  /* Hero styles */
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section {
+    flex: 1;
+    height: 50vw;
+    margin: 0px;
+  }
+
+  .q-hero {
+    font-size: 24px;
+  }
+
+  .title {
+    flex: 1;
+  }
+
+  /* Introduction styles */
+.introduction-text {
+    display: flex;
+  }
+
+.introduction-text .container-black {
   flex-direction: column;
 }
 
-.introduction .container-black {
+.introduction-text .container-white {
   flex-direction: column;
 }
 
-#facts-black {
-  display: none;
-}
-
-.introduction p {
+  .introduction-text p {
     padding: 20px;
     margin: 0px;
     font-size: 16px;
     line-height: 1.75;
   }
 
- .introduction h2 {
-    font-size: 26px;
-    font-weight: 700;
-    display: flex;
-    padding: 20px;
-    margin: 0px;
-  }
-
-  .introduction h3 {
+  .introduction-text h2 {
     font-size: 26px;
     font-weight: 700;
     padding: 20px;
     margin: 0px;
   }
 
-.intro-facts {
-  display: flex;
-  flex-direction: column;
-}
-
-.introduction a {
+  .introduction-text a {
     font-weight: 750;
   }
 
+  /* Facts styles */
+  .intro-facts {
+    display: flex;
+  }
 
-.intro-text {
-  display: flex;
+  .facts-black {
+    display: none;
+  }
+
+  .facts-white {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .facts-white h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 0px 5px;
+  }
+
+.intro-facts ul {
+    font-size: 16px;   
+    margin-left: 10px;
+  }
+
+.intro-facts li {
+    padding: 3px 10px;
+  }
+
+  #intro-img {
+    flex: 1;
+  }
+
+  /* Summary styles */
+  .summary {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .summary p {
+    font-size: 16px;
+    padding: 20px;
+    margin: 0px;
+    line-height: 1.75;
+  }
+
+  .summary a {
+    font-weight: 750;
+    display: inline;
+  }
+
+  /* Footer styles */
+  footer {
+    display: flex;  
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .footer-icons {
+    flex: 1;
+    margin-right: 40px;
+  }
+
+  #footer-text {
+    flex: 1; 
+    padding: 0;  
+  }
+
+  .red-icon {
+    font-size: 48px;
+    padding: 5px;
+  }
 }
 
-.summary {
-  display: flex;
-}
-
-.summary p {
-  font-size: 16px;
-  padding: 20px;
-  margin: 0px;
-}
-
-.summary a {
-  font-weight: 750;
-  display: flex;
-}
-}
 /* Media query:  x-large devices (Desktop and large laptops , 1400px and up) */
 @media screen and (min-width: 1400px) {
 /* General styles */
-/* NOTE/TO DO place-holder content remove*/
-  .container-black {
-    display: flex;
+/* Container styles */
+  .container-white a {
+    padding: 0px;
+  }
+
+/* Header styles */
+/* Navigation bar styles */
+
+/* Main styles */
+/* Hero styles */
+
+/* Introduction styles */
+  .introduction-text h2 {
+    font-size: 40px;
+  }  
+
+  .introduction-text p {
+  font-size: 21px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Facts styles */
+.facts-black {
+    display: none;
+  }
+
+.intro-facts h3 {
+    font-size: 30px;
+  }
+
+.intro-facts ul {
+    font-size: 21px;   
+  }
+.intro-facts li {
+    padding: 3px 10px;
+  }
+
+/* Summary styles */
+ .summary p {
+  font-size: 21px;
+  line-height: 1.5;
+} 
+
+/* Footer styles */
+footer p {
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+.red-icon {
+    font-size: 64px;
+    padding: 5px;
   }
 }
 
 /* Media query: xx-large deviced (Desktop large monitor, 1920px and up) */
+/*
 @media screen and (min-width: 1920px) {
-/* General styles */
-/* NOTE/TO DO place-holder content remove*/
+
+
   .container-black {
     display: flex;
   }
-}
+    .facts-black {
+    display: none;
+  }
+} */
