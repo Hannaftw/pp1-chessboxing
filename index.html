@@ -114,9 +114,8 @@
       </section>
 
       <!-- Introduction -->
-      <section class="introduction">
-        <div class="intro-text">
-          <div class="container-black">
+      <div class="introduction-text">
+        <div class="container-black">
             <h2>
               Mental mastery meets physical prowess 
             </h2>
@@ -180,9 +179,11 @@
             </p>
           </div>
         </div>
+
+        <!-- Facts section -->
         <div class="intro-facts">
           <!-- Two containers with same contant but separate ID for styles for diffeent screen sizes -->
-          <div class="container-white" id="facts-white">
+          <div class="container-white facts-white">
             <h3>A brief introduction to chessboxing</h3>
             <ul>
               <li>
@@ -205,7 +206,8 @@
               </li>
             </ul>
           </div>
-          <div class="container-black" id="facts-black">
+        
+          <div class="container-black facts-black">
             <h3>A brief introduction to chessboxing</h3>
             <ul>
               <li>
@@ -227,15 +229,16 @@
                 to win both events in order to win the match.
               </li>
             </ul>
-          </div>
-          <div class="container-black">
-            <img
+          </div>    
+          <div class="container-black" id="intro-img">  
+           <img
               src="assets/images/cb-tampachessboxingacademy-original.webp"
               alt="chess pieces boxing"
               aria-label="Two chess pieces wearing red gloves boxing" />
-          </div>
-        </div>
-      </section>
+              <p id="img-text">What if I add some text?</p> 
+          </div>  
+        </div> 
+
 
       <div class="summary">
         <div class="container-white">
@@ -270,24 +273,17 @@
               main event.
             </a>
           </p>
-        </div>
-        <div class="container-black">
-          <p>
-            This is placeholder text. <br />
-            This is placeholder text. <br />
-            This is placeholder text. <br />
-            This is placeholder text. <br />
-            This is placeholder text. <br />
-            This is placeholder text. <br />
-            This is placeholder text. <br />
-          </p>
-        </div>
       </div>
+      <div class="container-black summary-text">
+      this is placeholder text
+      </div>
+    </div>
+   
     </main>
 
     <!-- Footer section -->
     <footer>
-      <p>
+      <p id="footer-text">
         Made by
         <a
           href="https://github.com/Hannaftw"
