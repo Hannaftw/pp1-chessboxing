@@ -381,19 +381,59 @@ I     it prompts us to reconsider our traditional view of the ideal athlete. Per
          </a>
         is a great place to start. You will find more information about the sport, 
         it's history and what place it has in the world today, 
-        Other things you can find include a more comprehensive guide the rules, 
-        information about where clubs are located and upcoming events.
+        Other things you can find include a more comprehensive guide to the rules (in a downloadable pdf), 
+        as well as information about where national/local clubs are located and upcoming events.
       </p>
     </div>
-    <!-- NOTE/TO DO input etc for newsletter -->
+  
     <div class="container-black">
-      <h3>Sign up for our newsletter</h3>
+      <h3>
+        Sign up for our newsletter
+      </h3>
       <p>
-        If you want to stay up to date with the latest news about chessboxing, 
-        sign up for our newsletter. We promise not to spam you, we will only send you the most important news and updates.*
+        If you want to stay up to date with the latest news about chessboxing, sign up for our monthly newsletter. 
+        We promise not to drown you in emails, you will recieve only the most important news and updates.*
       </p>
-      <p id="disclaimer">* This is not actually a sign up for a real newsletter, it's sadly merely a demonstration that the maker of this site has included
-        in order to display her skills in HTML and CSS. She truly wishes that this was a real newsletter, but alas, it is not.
+
+      <form 
+        id="user-info" 
+        onsubmit="return submitSignup()">
+        <label 
+          for="name">
+          Name:
+        </label>
+        <br>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          required>
+        <br>
+        <label 
+          for="email">
+          Email:
+        </label>
+        <br>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          required>
+          <br>
+        <button 
+          type="submit">
+          Sign me up!
+        </button>
+      </form>
+
+      <!-- JS Function will put response message here, see in script section at the bottom -->
+      <p 
+        id="signup-response">
+      </p>  
+      <p 
+        class="disclaimer">
+        * This is not a sign up for a real newsletter, it is merely a demonstration that the maker of this site 
+        has included in order to display her coding abilities. She truly wishes that it was real, but alas, sadly it is not.
       </p>
     </div>
   </section>
@@ -404,20 +444,20 @@ I     it prompts us to reconsider our traditional view of the ideal athlete. Per
   <p id="footer-text">
     Made by
     <a
-      href="https://github.com/Hannaftw"
+      href="https://github.com/hannaftw"
       target="_blank"
       rel="noopener"
-      aria-label="Visit Hannaftw's GitHub page (opens in a new tab)">
+      aria-label="visit the creator of the site's github page (opens in a new tab)">
       Hanna Bergsten
     </a>
   </p>
   <ul class="footer-icons">
     <li>
       <a
-        href="https://www.github.com/"
+        href="https://github.com/hannaftw/pp1-chessboxing"
         target="_blank"
         rel="noopener"
-        aria-label="Visit our github page (opens in a new tab)">
+        aria-label="visit the github respository for this site">
         <i class="fa-brands fa-github red-icon"></i>
       </a>
     </li>
@@ -426,7 +466,7 @@ I     it prompts us to reconsider our traditional view of the ideal athlete. Per
         href="https://www.linkedin.com/"
         target="_blank"
         rel="noopener"
-        aria-label="Visit our LinkedIn page (opens in a new tab)">
+        aria-label="visit the creators linkedin page (opens in a new tab)">
         <i class="fa-brands fa-linkedin red-icon"></i>
       </a>
     </li>
@@ -435,16 +475,27 @@ I     it prompts us to reconsider our traditional view of the ideal athlete. Per
         href="https://www.instagram.com/"
         target="_blank"
         rel="noopener"
-        aria-label="Visit our Instagram page (opens in a new tab)">
+        aria-label="visit the creators instagram page (opens in a new tab)">
         <i class="fa-brands fa-instagram red-icon"></i>
       </a>
     </li>
   </ul>
 </footer>
 
-  <!-- JavaScript for FontAwesome kit - credit further in README.md -->
-<script
-    src="https://kit.fontawesome.com/643645f09b.js">
+<!-- JavaScript for newsletter in Learn More Section -->
+<script>
+  function submitSignup() {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      var output = document.getElementById("signup-response");
+      output.innerHTML = `Thank you ${name} for you interest in this glorious sport, 
+      you will recieve monthly news via ${email} from now on!`;
+      return false;
+    }
+</script>
+
+<!-- JavaScript for FontAwesome kit - credit further in README.md -->
+<script src="https://kit.fontawesome.com/643645f09b.js">
 </script>
 
 </body>
