@@ -12,7 +12,7 @@ body {
   background-color: #000;
   font-family: 'Montserrat', sans-serif;
   display: block;
-  padding: 5px;
+  padding: 10px;
 }
 
 /* Main styles */
@@ -21,6 +21,8 @@ p {
   font-size: 12px;
   line-height: 1.52;
   font-weight: 400;
+  padding: 5px;
+  margin: 0px;
 }
 
 p a {
@@ -29,12 +31,45 @@ p a {
   display: inline;
 }
 
+h1 {
+  font-family: 'rye', cursive;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  margin: 2px;
+}
+
+#h1-chess {
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.title h1 {
+  margin: 2px;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.5;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
 /* Container styles */
 .container-black {
+  display: block;
   background-color: #000;
   color: #fff;
   width: 100%;
-  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-black a {
@@ -42,15 +77,18 @@ p a {
 }
 
 .container-white {
+  display: block;
   background-color: #fff;
   color: #000;
   width: 100%;
-  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-white a {
   color: #000;
 }
+
 /* Header styles */
 .navbar {
   display: flex;
@@ -63,24 +101,8 @@ p a {
   display: block;
 }
 
-.title h1 {
-  font-family: 'rye', cursive;
-  font-size: 32px;
-  line-height: 1.5;
-  color: #fff;
-  font-weight: 500;
-  text-align: center;
-  margin: 2px;
-}
-
-.title h2 {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 1.5;
-  font-weight: 600;
-  text-align: center;
-  padding: 5px;
-  margin: 2px;
+.container-white img {
+  width: 100%;
 }
 
 /* navigation bar styles */
@@ -131,6 +153,7 @@ nav a {
   height: 50px;
   border: solid 1px #fff;
   border-radius: 10%;
+  margin-right: 10px;
 }
 
 /* Nav toggle - dropdown meny for mobile screens */
@@ -144,13 +167,21 @@ nav a {
 
 .menu-icon-label {
   font-size: 48px;
+  text-align: right;
+  display: flex;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
 }
 
 /* Hero styles */
 .hero-section {
   height: 100vw;
   background: url('../images/hero-mikevs-medium.webp') no-repeat center
-    center/cover;
+  center/cover;
   background-size: contain;
   position: relative;
   display: flex;
@@ -175,12 +206,30 @@ nav a {
   margin: 0px;
   font-weight: 600;
 }
+
 #q-source {
   text-align: right;
   font-weight: 700;
 }
+
 /* Main styles */
+/* Title styles */
+.title .container-black img {
+  width: 100%;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
 /* Introduction styles */
+#chessintrolaptop {
+  display: none;
+}
+
+#chessintromob .container-black {
+  text-align: left;
+  display: block;
+}
+/*Chessboxing specific styles */
 .introduction-text p {
   padding: 10px;
   margin: 0px;
@@ -195,6 +244,7 @@ nav a {
   margin: 0;
 }
 
+/* Chessboxing specific styles */
 /* Facts styles */
 #facts-white {
   display: none;
@@ -252,6 +302,7 @@ nav a {
 .summary-text {
   display: none;
 }
+
 /* Footer styles */
 footer {
   display: flex;
@@ -262,6 +313,7 @@ footer {
   justify-content: center;
   padding-top: 15px;
 }
+
 .footer-text {
   flex: 1;
   flex-direction: column;
@@ -311,20 +363,42 @@ footer ul {
   p {
     font-size: 18px;
     font-weight: 500;
-    padding: 20px;
+    padding: 15px;
+    margin: 0px;
   }
 
-  /* Header styles  */
-  .title h1 {
+  h1 {
     font-size: 55px;
     font-weight: 500;
     text-align: center;
-    margin: 2px;
+    padding: 10px;
   }
 
-  .title h2 {
+  #h1-chess {
+    font-size: 70px;
+  }
+
+  h2 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .container-black {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .container-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
   }
 
   /* Navigation bar styles */
@@ -360,10 +434,7 @@ footer ul {
   }
 
   /* Main styles */
-  .title {
-    display: block;
-  }
-
+  /* Home specific styles */
   /* Hero styles */
   .hero-section {
     justify-content: center;
@@ -379,14 +450,17 @@ footer ul {
     text-align: center;
   }
 
+  /* General styles */
   /* Introduction styles */
   .introduction a {
     font-weight: 750;
   }
 
-  .introduction p {
-    padding: 25px;
+  .container-black, .container-white .chessintro {
+    text-align: center;
+    margin: 0px;   
   }
+
   .introduction ul {
     font-size: 18px;
     padding: 20px;
@@ -473,12 +547,15 @@ footer ul {
   }
 
   h2 {
+    font-size: 32px;
     margin: 0;
   }
+
   /* Container styles */
   .container-black {
     display: flex;
     flex: 1;
+    flex-direction: column;
     height: 50vw;
     width: auto;
     justify-content: center;
@@ -488,6 +565,7 @@ footer ul {
 
   .container-white {
     display: flex;
+    flex-direction: column;
     flex: 1;
     height: 50vw;
     width: auto;
@@ -539,7 +617,19 @@ footer ul {
     font-size: 24px;
   }
 
+  /* Title styles */
+  .title img {
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+    margin: 0px;
+  }
+
   /* Introduction styles */
+
+  #chessintromob {
+    display: none;
+  }
   .intro-facts {
     display: flex;
   }
@@ -570,61 +660,37 @@ footer ul {
 
   #intro-img {
     flex: 1;
-  } 
-  
+  }
+
   /*General styles */
   /* Main styles */
   .title {
     display: flex;
+    flex-direction: row;
   }
 
-  .title .container-black {
-    flex-direction: column;
-  }
-
+  /* Chessboxing specific styles */
   /* Introduction styles */
-  .introduction {
+  .introduction-cb {
     display: block;
   }
 
   .introduction-text {
     display: flex;
     flex-direction: row;
-  }
-
-  .introduction-text .container-white {
-    flex-direction: column;
-  }
-
-  .introduction-text .container-black {
-    flex-direction: column;
+    flex: 1;
   }
 
   .introduction-img {
     display: flex;
-    flex-direction: row-reverse;
-  }
-
-  .introduction-img .container-black {
-    flex-direction: column;
-  }
-
-  .introduction-img .container-white {
-    flex-direction: column;
+    flex-direction: row;
+    flex: 1;
   }
 
   /* Facts styles */
   .history {
     display: flex;
     flex-direction: row-reverse;
-  }
-
-  .history .container-white {
-    flex-direction: column;
-  }
-
-  .history .container-black {
-    flex-direction: column;
   }
 
   .history img {
@@ -682,7 +748,7 @@ footer ul {
     font-size: 13px;
     display: flex;
     flex-direction: column;
- margin-right: 10px;
+    margin-right: 10px;
   }
 
   .trivia li {
