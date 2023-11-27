@@ -150,7 +150,7 @@ nav a {
 .hero-section {
   height: 100vw;
   background: url('../images/hero-mikevs-medium.webp') no-repeat center
-  center/cover;
+    center/cover;
   background-size: contain;
   position: relative;
   display: flex;
@@ -261,17 +261,17 @@ footer {
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-}  
-  .footer-text {
-    flex: 1;
-    flex-direction: column;
-  }
+}
+.footer-text {
+  flex: 1;
+  flex-direction: column;
+}
 
 .footer-text p {
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-  }
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
 
 footer a {
   font-weight: 800;
@@ -289,12 +289,11 @@ footer ul {
 }
 
 .footer-icons {
-    flex: 1;
-    align-items: center;
-    justify-content: right;
-    gap: 5vw;
-  }
-
+  flex: 1;
+  align-items: center;
+  justify-content: right;
+  gap: 5vw;
+}
 
 .red-icon {
   color: #ff0000;
@@ -306,11 +305,12 @@ footer ul {
 @media screen and (min-width: 768px) {
   /* General styles */
   body {
-    padding: 20px;}
- 
+    padding: 20px;
+  }
+
   p {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 20px;
   }
 
@@ -382,16 +382,16 @@ footer ul {
   /* Introduction styles */
   .introduction a {
     font-weight: 750;
-  }  
+  }
 
-.introduction p {
-  padding: 25px;
-}
+  .introduction p {
+    padding: 25px;
+  }
   .introduction ul {
     font-size: 18px;
     padding: 20px;
   }
-  
+
   .introduction-text h2 {
     font-size: 30px;
     font-weight: 700;
@@ -401,7 +401,7 @@ footer ul {
   /* Facts styles */
   #facts-black {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
   }
 
   .intro-facts h3 {
@@ -411,27 +411,27 @@ footer ul {
     padding-top: 10px;
   }
 
-.intro-facts img {
-  padding-bottom: 10px;
-}
+  .intro-facts img {
+    padding-bottom: 10px;
+  }
 
-#img-text {
-  display: none;
-}
+  #img-text {
+    display: none;
+  }
 
-/* Summary styles */ 
-.intro-facts ul {
+  /* Summary styles */
+  .intro-facts ul {
     font-size: 18px;
     padding: 20px;
     margin-bottom: 10px;
   }
 
-/* footer styles */
-footer {
-  padding: 5px;
-}
+  /* footer styles */
+  footer {
+    padding: 5px;
+  }
 
-footer a {
+  footer a {
     font-size: 22px;
     font-weight: 600;
   }
@@ -466,10 +466,15 @@ footer a {
 
   p {
     line-height: 1.5;
-    font-size: 17px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px;
   }
 
+  h2 {
+    margin: 0;
+  }
   /* Container styles */
   .container-black {
     display: flex;
@@ -515,7 +520,7 @@ footer a {
     font-size: 22px;
   }
 
-  /* Main styles */
+  /* Home specific styles */
   /* Hero styles */
   .hero {
     display: flex;
@@ -534,42 +539,7 @@ footer a {
     font-size: 24px;
   }
 
-  .title {
-    flex: 1;
-  }
-
   /* Introduction styles */
-.introduction-text {
-    display: flex;
-  }
-
-.introduction-text .container-black {
-  flex-direction: column;
-}
-
-.introduction-text .container-white {
-  flex-direction: column;
-}
-
-  .introduction-text p {
-    padding: 20px;
-    margin: 0px;
-    font-size: 16px;
-    line-height: 1.75;
-  }
-
-  .introduction-text h2 {
-    font-size: 26px;
-    font-weight: 700;
-    padding: 20px;
-    margin: 0px;
-  }
-
-  .introduction-text a {
-    font-weight: 750;
-  }
-
-  /* Facts styles */
   .intro-facts {
     display: flex;
   }
@@ -589,19 +559,151 @@ footer a {
     padding: 0px 5px;
   }
 
-.intro-facts ul {
-    font-size: 16px;   
+  .intro-facts ul {
+    font-size: 16px;
     margin-left: 10px;
   }
 
-.intro-facts li {
+  .intro-facts li {
     padding: 3px 10px;
   }
 
   #intro-img {
     flex: 1;
+  } 
+  
+  /*General styles */
+  /* Main styles */
+  .title {
+    display: flex;
   }
 
+  .title .container-black {
+    flex-direction: column;
+  }
+
+  /* Introduction styles */
+  .introduction {
+    display: block;
+  }
+
+  .introduction-text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .introduction-text .container-white {
+    flex-direction: column;
+  }
+
+  .introduction-text .container-black {
+    flex-direction: column;
+  }
+
+  .introduction-img {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .introduction-img .container-black {
+    flex-direction: column;
+  }
+
+  .introduction-img .container-white {
+    flex-direction: column;
+  }
+
+  /* Facts styles */
+  .history {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .history .container-white {
+    flex-direction: column;
+  }
+
+  .history .container-black {
+    flex-direction: column;
+  }
+
+  .history img {
+    width: 40vw;
+    height: auto;
+  }
+
+  /* Rules styles */
+  /* Chessboxing specific styles */
+  .rules {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #rules-cbgen,
+  .rules-cbspec {
+    display: flex;
+  }
+
+  .rules .container-black,
+  .container-white {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 50vw;
+    width: auto;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-white iframe {
+    height: 40vw;
+    width: 45vw;
+  }
+
+  /* Trivia styles */
+  .trivia {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .trivia .container-black {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trivia .container-white {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .trivia ul {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+ margin-right: 10px;
+  }
+
+  .trivia li {
+    padding: 2px 3px;
+  }
+  .trivia ol {
+    font-size: 12px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Learn more styles */
+  .learn-more {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .learn-more .container-black {
+    display: flex;
+    flex-direction: column;
+  }
   /* Summary styles */
   .summary {
     display: flex;
@@ -622,7 +724,7 @@ footer a {
 
   /* Footer styles */
   footer {
-    display: flex;  
+    display: flex;
     padding: 10px;
     margin-top: 20px;
   }
@@ -633,8 +735,8 @@ footer a {
   }
 
   #footer-text {
-    flex: 1; 
-    padding: 0;  
+    flex: 1;
+    padding: 0;
   }
 
   .red-icon {
@@ -645,58 +747,61 @@ footer a {
 
 /* Media query:  x-large devices (Desktop and large laptops , 1400px and up) */
 @media screen and (min-width: 1400px) {
-/* General styles */
-/* Container styles */
+  /* General styles */
+  body {
+    padding: 10px;
+  }
+  /* Container styles */
   .container-white a {
     padding: 0px;
   }
 
-/* Header styles */
-/* Navigation bar styles */
+  /* Header styles */
+  /* Navigation bar styles */
 
-/* Main styles */
-/* Hero styles */
+  /* Main styles */
+  /* Hero styles */
 
-/* Introduction styles */
+  /* Introduction styles */
   .introduction-text h2 {
     font-size: 40px;
-  }  
+  }
 
   .introduction-text p {
-  font-size: 21px;
-  line-height: 1.5;
-  font-weight: 500;
-}
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
 
-/* Facts styles */
-.facts-black {
+  /* Facts styles */
+  .facts-black {
     display: none;
   }
 
-.intro-facts h3 {
+  .intro-facts h3 {
     font-size: 30px;
   }
 
-.intro-facts ul {
-    font-size: 21px;   
+  .intro-facts ul {
+    font-size: 21px;
   }
-.intro-facts li {
+  .intro-facts li {
     padding: 3px 10px;
   }
 
-/* Summary styles */
- .summary p {
-  font-size: 21px;
-  line-height: 1.5;
-} 
+  /* Summary styles */
+  .summary p {
+    font-size: 21px;
+    line-height: 1.5;
+  }
 
-/* Footer styles */
-footer p {
-  font-size: 22px;
-  margin-left: 20px;
-}
+  /* Footer styles */
+  footer p {
+    font-size: 22px;
+    margin-left: 20px;
+  }
 
-.red-icon {
+  .red-icon {
     font-size: 64px;
     padding: 5px;
   }
