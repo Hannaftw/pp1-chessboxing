@@ -303,6 +303,11 @@ nav a {
   display: none;
 }
 
+.disclaimer {
+  font-size: 12px;
+  font-weight: 400;
+}
+
 /* Footer styles */
 footer {
   display: flex;
