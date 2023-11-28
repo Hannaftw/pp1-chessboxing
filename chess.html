@@ -1,167 +1,132 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <!-- Meta tags for searh engines -->
-      <meta name="description" content="webpage for chessboxing enthusiasts">
-      <meta name="keywords" content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts">
-      <title>Chessboxing - the ultimate sport</title>
-      <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge" />
+    <!-- Meta tags for searh engines -->
+    <meta
+      name="description"
+      content="webpage for chessboxing enthusiasts" />
+    <meta
+      name="keywords"
+      content="chess, boxing, chessboxing, sport, game, chessboxing enthusiasts" />
+    <title>Chessboxing - the ultimate sport</title>
+    <!-- Favicon - responsive NOTE/TO DO: don't forget to credit the site in the readme, see notes in google doc -->
 
-      <!-- Stylesheet NOTE/TO DO link to CSS stylesheet -->
-      <link rel="stylesheet" href="assets\css\style.css">
-    </head>
-    <!-- NOTE/TO DO create page about chess -->
-    
+    <!-- Stylesheet NOTE/TO DO link to CSS stylesheet -->
+    <link
+      rel="stylesheet"
+      href="assets\css\style.css" />
+  </head>
+  <!-- NOTE/TO DO create page about chess -->
+
   <body>
-      <!-- Header section -->
-  <header>
-    <!-- Navbar section -->
-    <section class="navbar">
-      <!-- h2 added hidden for semantic HTML -->
-      <h2 class="hidden">Header navigation bar</h2>
-      <a
-        href="index.html"
-        aria-label="navigate to page home">
-        <img
-          src="assets/images/navicon.webp"
-          alt="chessboxing official logo"
-          id="nav-logo"
-          aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)" />
-      </a>
-      <input
-        type="checkbox"
-        id="menu-icon"
-        class="menu-icon" />
-      <label
-        for="menu-icon"
-        class="menu-icon-label">
-        <i class="fa-solid fa-bars"></i>
-      </label>
+    <!-- Header section -->
+    <header>
+      <!-- Navbar section -->
+      <section class="navbar">
+        <!-- h2 added hidden for semantic HTML -->
+        <h2 class="hidden">Header navigation bar</h2>
+        <a
+          href="index.html"
+          aria-label="navigate to page home">
+          <img
+            src="assets/images/navicon.webp"
+            alt="chessboxing official logo"
+            id="nav-logo"
+            aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)" />
+        </a>
+        <input
+          type="checkbox"
+          id="menu-icon"
+          class="menu-icon" />
+        <label
+          for="menu-icon"
+          class="menu-icon-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
 
-      <nav>
-        <!-- h3 added hidden for semantic HTML -->
-        <h3 class="hidden">Navigation Bar links</h3>
-        <ul class="nav-links">
-          <li>
-            <a
-              href="index.html"
-              aria-label="navigate to page home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="boxing.html"
-              aria-label="navigate to the page boxing">
-              Boxing
-            </a>
-          </li>
-          <li>
-            <a
-              href="chess.html"
-              class="active"
-              aria-label="page that is active chess">
-              Chess
-            </a>
-          </li>
-          <li>
-            <a
-              href="chessboxing.html"
-              aria-label="navigate to the page chessboxing">
-              Chessboxing
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
-  </header>
+        <nav>
+          <!-- h3 added hidden for semantic HTML -->
+          <h3 class="hidden">Navigation Bar links</h3>
+          <ul class="nav-links">
+            <li>
+              <a
+                href="index.html"
+                aria-label="navigate to page home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="boxing.html"
+                aria-label="navigate to the page boxing">
+                Boxing
+              </a>
+            </li>
+            <li>
+              <a
+                href="chess.html"
+                class="active"
+                aria-label="page that is active chess">
+                Chess
+              </a>
+            </li>
+            <li>
+              <a
+                href="chessboxing.html"
+                aria-label="navigate to the page chessboxing">
+                Chessboxing
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </header>
 
-  <!-- Main section -->
-  <main>
-    <section class="title">
-      <div class="container-black">
-        <h1 
-          id="h1-chess">
-          CHESS
-        </h1>
-        <h2>
-          - The art of mental combat
-        </h2>
-      </div>
-      <div class="container-black">
-        <img 
-          src="assets/images/c-piecesadobe.webp"
-          alt="chess pieces played out on a board"
-          aria-label="chesspieces layed out on a chessboard seen from above" />
-        <p class="chessintro">
-          <i>A defeat on the board may not hurt as much physically as being knocked out, but a checkmate may feel like a punch to the gut.</i>
-        </p>
-        <img 
-          src="assets/images/c-piecesadobe.webp"
-          alt="chess pieces played out on a board"
-          aria-label="chesspieces layed out on a chessboard seen from above" />
-      </div>
-    </section>
-
-    <!-- Introction section for mobile and smaller screens -->
-    <section class="introduction" id="chessintromob">
-      <div class="container-white">
-        <h2>Mastering the board,
-          <br>
-          a chessboxing essential
-        </h2>
-        <p>
-          Welcome to the cerebral realm of chess, an integral half of the exhilarating world of      
-            <a
-              href="chessboxing.html"
-              aria-label="navigate to the page Chessboxing">
-            chessboxing.
-            </a>
-          While the physical prowess of
-            <a
-              href="boxing.html"
-              aria-label="navigate to the page Boxing">
-              boxing
-            </a>
-          is visible to the eye, the strategic depth of chess forms the unseen battleground where minds clash with equal intensity.
-          This page is your gateway to understanding the foundational rules and strategies of chess.
-          Whether you are new to the board or looking to sharpen your tactics, we have you covered.
-          <br>
-        </p>
-      </div>
-      <div class="container-black">
-        <p>
-          Learn about the history of chess, the rules and and grasp the basic principles of the game, you will find what every chessboxer needs to command the board.
-          Remember, in chessboxing, mental agility is as crucial as physical strength. It's not just about the checkmate; it's about outthinking your opponent in every way.
-          Let's embark on this journey of mental mastery together. Prepare to engage your mind, one move at a time.
-        </p>
-      </div>
-      <div class="container-white">
-       <img
-          src="assets/images/c-hanstikkanen.webp"
-          alt="hans tikkanen, five time Swedish chess champion"
-          aria-label="hans tikkanen playing chess, five time Swedish chess champion" />
+    <!-- Main section -->
+    <main>
+      <section class="title">
+        <div class="container-black">
+          <h1 id="h1-chess">CHESS</h1>
+          <h2>- The art of mental combat</h2>
+        </div>
+        <div class="container-black">
+          <img
+            src="assets/images/c-piecesadobe.webp"
+            alt="chess pieces played out on a board"
+            aria-label="chesspieces layed out on a chessboard seen from above" />
           <p class="chessintro">
-            <i>
-              Hans Tikkanen, a chess grandmaster and five time Swedish champion (who also happens to be a friend of the creator of this site)
-            </i>
+            <i
+              >A defeat on the board may not hurt as much physically as being
+              knocked out, but a checkmate may feel like a punch to the gut.</i
+            >
           </p>
-      </div>
-    </section>
+          <img
+            src="assets/images/c-piecesadobe.webp"
+            alt="chess pieces played out on a board"
+            aria-label="chesspieces layed out on a chessboard seen from above" />
+        </div>
+      </section>
 
-    <!-- Introction section for laptop and larger screens -->
-    <section class="introduction" id="chessintrolaptop">
-      <div class="container-white">
-        <h2>
-          Mastering the board,
-          <br>
-          a chessboxing essential
-        </h2>
-        <p>
-          Welcome to the cerebral realm of chess, an integral half of the exhilarating world of      
+      <!-- Introction section for mobile and smaller screens -->
+      <section
+        class="introduction"
+        id="chessintromob">
+        <div class="container-white">
+          <h2>
+            Mastering the board,
+            <br />
+            a chessboxing essential
+          </h2>
+          <p>
+            Welcome to the cerebral realm of chess, an integral half of the
+            exhilarating world of
             <a
               href="chessboxing.html"
               aria-label="navigate to the page Chessboxing">
@@ -173,80 +138,474 @@
               aria-label="navigate to the page Boxing">
               boxing
             </a>
-          is visible to the eye, the strategic depth of chess forms the unseen battleground where minds clash with equal intensity.
-          This page is your gateway to understanding the foundational rules and strategies of chess.
-          Whether you are new to the board or looking to sharpen your tactics, we have you covered.
-            <br>
-            <br>
-          Learn about the history of chess, the rules and and grasp the basic principles of the game, you will find what every chessboxer needs to command the board.
-          Remember, in chessboxing, mental agility is as crucial as physical strength. It's not just about the checkmate; it's about outthinking your opponent in every way.
-          Let's embark on this journey of mental mastery together. Prepare to engage your mind, one move at a time.
-        </p>
-      </div>
-      <div class="container-white">
-        <img
-          src="assets/images/c-hanstikkanen.webp"
-          alt="hans tikkanen, five time Swedish chess champion"
-          aria-label="hans tikkanen playing chess, five time Swedish chess champion" />
-        <p class="chessintro">
-          <i>
-            Hans Tikkanen, a chess grandmaster and five time Swedish champion (who also happens to be a friend of the creator of this site)
-          </i>
-        </p>
-      </div>
-    </section>
-  </main>
+            is visible to the eye, the strategic depth of chess forms the unseen
+            battleground where minds clash with equal intensity. This page is
+            your gateway to understanding the foundational rules and strategies
+            of chess. Whether you are new to the board or looking to sharpen
+            your tactics, we have you covered.
+            <br />
+          </p>
+        </div>
+        <div class="container-black">
+          <p>
+            Learn about the history of chess, the rules and and grasp the basic
+            principles of the game, you will find what every chessboxer needs to
+            command the board. Remember, in chessboxing, mental agility is as
+            crucial as physical strength. It's not just about the checkmate;
+            it's about outthinking your opponent in every way. Let's embark on
+            this journey of mental mastery together. Prepare to engage your
+            mind, one move at a time.
+          </p>
+        </div>
+        <div class="container-white">
+          <img
+            src="assets/images/c-hanstikkanen.webp"
+            alt="hans tikkanen, five time Swedish chess champion"
+            aria-label="hans tikkanen playing chess, five time Swedish chess champion" />
+          <p class="chessintro">
+            <i>
+              Hans Tikkanen, a chess grandmaster and five time Swedish champion
+              (who also happens to be a friend of the creator of this site)
+            </i>
+          </p>
+        </div>
+      </section>
 
-  <!-- Footer section -->
-  <footer>
-    <p>
-      Made by
-      <a
-        href="https://github.com/hannaftw"
-        target="_blank"
-        rel="noopener"
-        aria-label="visit hannaftw's github page (opens in a new tab)">
-        Hanna Bergsten
-      </a>
-    </p>
-    <ul class="footer-icons">
-      <li>
+      <!-- Introction section for laptop and larger screens -->
+      <section
+        class="introduction"
+        id="chessintrolaptop">
+        <div class="container-white">
+          <h2>
+            Mastering the board,
+            <br />
+            a chessboxing essential
+          </h2>
+          <p>
+            Welcome to the cerebral realm of chess, an integral half of the
+            exhilarating world of
+            <a
+              href="chessboxing.html"
+              aria-label="navigate to the page Chessboxing">
+              chessboxing.
+            </a>
+            While the physical prowess of
+            <a
+              href="boxing.html"
+              aria-label="navigate to the page Boxing">
+              boxing
+            </a>
+            is visible to the eye, the strategic depth of chess forms the unseen
+            battleground where minds clash with equal intensity. This page is
+            your gateway to understanding the foundational rules and strategies
+            of chess. Whether you are new to the board or looking to sharpen
+            your tactics, we have you covered.
+            <br />
+            <br />
+            Learn about the history of chess, the rules and and grasp the basic
+            principles of the game, you will find what every chessboxer needs to
+            command the board. Remember, in chessboxing, mental agility is as
+            crucial as physical strength. It's not just about the checkmate;
+            it's about outthinking your opponent in every way. Let's embark on
+            this journey of mental mastery together. Prepare to engage your
+            mind, one move at a time.
+          </p>
+        </div>
+        <div class="container-white">
+          <img
+            src="assets/images/c-hanstikkanen.webp"
+            alt="hans tikkanen, five time Swedish chess champion"
+            aria-label="hans tikkanen playing chess, five time Swedish chess champion" />
+          <p class="chessintro">
+            <i>
+              Hans Tikkanen, a chess grandmaster and five time Swedish champion
+              (who also happens to be a friend of the creator of this site)
+            </i>
+          </p>
+        </div>
+      </section>
+
+      <section class="history">
+        <div class="chess-history">
+          <div class="container-black">
+            <h2>A breif history of Chess</h2>
+            <p>
+              The game of chess, a chessboxing cornerstone, has a rich history
+              that spans over 1500 years. Originating in India during the 6th
+              century, chess began as 'Chaturanga', a game representing the four
+              divisions of the Indian army: infantry, cavalry, elephantry, and
+              chariotry. This early form of chess was a strategic, two-player
+              war game reflecting the complexities of battle.
+              <br />
+              <br />
+              It was in Europe during the Middle Ages that chess underwent
+              significant transformations, with modifications to rules and
+              design that led to the version of chess we are familiar with.
+              Chess has historically permeated all levels of society,
+              symbolising strategic thinking and intellectual prowess. The
+              appeal of chess lies in its blend of simple rules and complex
+              strategies, making it a fitting intellectual counterpart to the
+              physical demands of boxing, truly testing both mind and body.
+            </p>
+          </div>
+          <div class="container-white">
+            <img
+              src="assets\images\c-horseattack.webp"
+              alt="a chess pieces, a horse attacking another chess piece"
+              aria-label="a chess piece, a horse, attacking another chess piece" />
+          </div>
+        </div>
+
+        <div class="chess-currently">
+          <div class="container-white">
+            <h2>Chess today: online playing and AI</h2>
+            <p>
+              Chess is bigger today than it has been in many years, it has
+              become more mainstream and more and more people are drawn to this
+              simple yet so complex game. This dispite all of the new technology
+              and games that are available. There was a large boost in
+              popularity during the pandemic, for obvious resons perhaps, and
+              many were inspired by the netflix series
+              <a
+                href="https://www.imdb.com/title/tt10048342/?ref_=ext_shr_lnk"
+                target="_blank"
+                rel="noopener"
+                aria-label="link to the imdb webpage for the tv series the queens gambit">
+                The Queen's Gambit.
+              </a>
+              In the modern era, chess has embraced the digital world,
+              revolutionising how it is played. It has become a global game and
+              players from all over the world can play matches against each
+              other.
+              <br />
+              <br />
+              Websites such as
+              <a
+                hrf="www.chess.com"
+                target="_blank"
+                rel="noopener"
+                aria-label="link to chess.com, opens in new tab">
+                chess.com
+              </a>
+              have democratised the game, providing availability to anyone with
+              internet access, and has played an integral part in creating a
+              growing global community of chess enthusiasts. Platforms offer
+              various game formats such as "classic" and speed/blitz chess (the
+              version played in chessboxing). There is something for everyone,
+              from beginners to grandmasters. Players can access tools for
+              learning and improvement, tutorials, analysis of games, and the
+              ability to replay games in order to study them closer.
+              <br />
+              <br />
+              Alongside the impact of the internet a significant milestone in
+              modern chess is the integration of AI. It began in 1997 when IBM's
+              Deep Blue defeated reigning world champion Garry Kasparov. AI has
+              many uses within the game, it can be used as both a powerful
+              opponent to practice against or as a coach. Algorithms can analyse
+              games, identify weaknesses, and suggest tailored methods for
+              improvement. Technology has expanded chess theory, computers
+              discover new strategies that have enriched the game's strategic
+              depth. Generally, and in chessboxing, the timeless game still
+              remains relevant and adapts to the times, blending tradition and
+              technological innovation to challenge players intellect.
+            </p>
+          </div>
+          <div class="container-black">
+            <img
+              src="assets\images\c-pcpieces.webp"
+              alt="chess pieces on a computer keyboard"
+              aria-label="chess pieces layed out on a computer keyboard" />
+          </div>
+        </div>
+      </section>
+
+      <section class="rules">
+        <div class="container-black">
+          <h2>The objective of Chess</h2>
+          <h3>- a short overlook of the rules</h3>
+          <p>
+            Chess is played on a square board in an eight-by-eight grid. One
+            player plays with black pieces and the other with white pieces, the
+            player that plays white always starts the game. Players begins with
+            16 pieces: one king, one queen, two rooks, two knights, two bishops,
+            and eight pawns. Each of the six piece types moves differently, with
+            the most powerful being the queen and the least powerful the pawn.
+            To learn about the different pieces and how they move as well as a
+            more in depth explanation of the rules, you can visit sites such as
+            <a href="https://www.chess.com/learn-how-to-play-chess">
+              chess.com
+            </a>
+            or
+            <a href="https://www.chesscademy.com/"> chesscademy.com </a>.
+            <br />
+            <br />
+            The objective of the game, how you win, is by checkmate, meaning the
+            opponent's king is placed under an inescapable threat of capture. To
+            achieve this, a player's pieces are used to attack and capture the
+            opponent's pieces. If there is not a checkmate, a player wins the
+            game if the opponent resigns, or runs out of time (in times games).
+            A game can also end in a draw in several ways.
+          </p>
+        </div>
+        <div class="container-white">
+          <h3>Chess terms explained (some more useful than others)</h3>
+          <ul>
+            <li>
+              <b>Check</b> - When a player's king is under attack by at least
+              one of the opponent's pieces.
+            </li>
+            <li>
+              <b>Chess rating</b> - A number that indicates the strength of a
+              chess player based on their performance in rated games. There is a
+              separation of ratings between online and over-the-board play due
+              to the fact that online ratings tend to be inflated.
+            </li>
+            <li>
+              <b>Grandmaster</b> - The highest title a chess player can attain
+              awarded by the world chess federation FIDE.
+            </li>
+            <li>
+              <b>Stalemate</b> - When the player whose turn it is to move has no
+              legal move and is not in check. The game ends in a draw.
+            </li>
+            <li>
+              <b>Fifty-move rule</b> - If in the previous 50 moves by each
+              player, no pawn has been moved and no capture has been made, the
+              game ends in a draw.
+            </li>
+            <li>
+              <b>Draw by agreement</b> - The players may agree to a draw at any
+              time.
+            </li>
+            <li>
+              <b>Chess clock</b> - A clock that is used to keep track of the
+              time used by the players. In chessboxing the clock is set to 3
+              minutes for each player.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="trivia">
+        <div class="container-black">
+          <img
+            src="assets\images\c-bobbyfisher.webp"
+            alt="bobby fischer, one of the most famous chess players of all time"
+            aria-label="the famous chess player and grandmaster bobby fisher sitting at a chess board" />
+          <h2>
+            Did he <i><b>really</b></i> say that?
+            <br />
+          </h2>
+          <p>
+            When thinking of influencial and skilled players of chess, the name
+            of this man will appear to many. People may know his name and
+            incredible chess skills but there are several things that people are
+            usually not aware of. Some interesting facts about are: he is the
+            youngest player ever to earn the title "grandmaster", he was an
+            outspoken supporter of nazism and publically wore nazi symbols, such
+            as a pin on his lapel, even during chess games and tournaments. He
+            was notoriously difficult to deal with, hated america and refused to
+            play matches even after the president pleaded with him. To say the
+            least, he was quite the character, strong opinions and no problem
+            expressing these. Here are some of the quotes uttered by the chess
+            legend, and yes he actually did say these things...
+            <br />
+          </p>
+        </div>
+        <div class="container-white">
+          <h3>"Wise" words from chess legend Bobby Fisher</h3>
+          <ul class="chess-quotes">
+            <li>
+              <q>
+                Chess is war over the board. The object is to crush the
+                opponent's mind.
+              </q>
+            </li>
+            <li>
+              <q> I like the moment when I break a man's ego </q>
+            </li>
+            <li>
+              <q> I don't believe in psychology. I believe in good moves. </q>
+            </li>
+            <li>
+              <q>
+                I object to being called a chess genius because I consider
+                myself to be and all around genius who just happens to play
+                chess, which is rather different.
+              </q>
+            </li>
+            <li>
+              <q>
+                I'm not afraid of Spassky. The world knows I'm the best. You
+                don't need a match to prove it.
+              </q>
+            </li>
+            <li>
+              <q> I'm the best Fischer that ever lived. </q>
+            </li>
+            <li>
+              <q>
+                I'm the most famous, the most studied, the most uncompromising,
+                the most difficult, the most brilliant, and the most important
+                chess player in the history of the game.
+              </q>
+            </li>
+            <li>
+              <q>
+                A piece of garbage like Kasparov might be called a chess genius,
+                but he's like an idiot savant. Outside of chess he knows
+                nothing.
+              </q>
+            </li>
+            <li>
+              <q>
+                People have been playing against me below their strength for
+                fifteen years.
+              </q>
+            </li>
+            <li>
+              <q>
+                My opponents make good moves too. Sometimes I don't take these
+                things into consideration.
+              </q>
+            </li>
+            <li>
+              <q> I add status to any tournament I attend. </q>
+            </li>
+            <li>
+              <q>
+                They asked me what year it was, what month it was, etc. I easily
+                answered these stupid questions.
+              </q>
+            </li>
+            <li>
+              <q> Is it against the law to kill a reporter? </q>
+            </li>
+          </ul>
+          <p>
+            Something tells me that this man would not do very well in a game of
+            chessboxing, but surely many people would want to meet up with him
+            in the ring. Maybe a genious like him wouldn't stoop so low, seeing
+            as he believed "blitz chess kills your ideas".
+          </p>
+        </div>
+      </section>
+
+      <section class="learn-more">
+        <div class="container-black"></div>
+        <div class="learnmore-links container-white">
+          <h2>Learn more about chess</h2>
+          <p>
+            If you want to learn more about chess, there are many resources
+            available online. You can find tutorials, articles, videos, and
+            courses. Here are some links to get you started:
+          </p>
+          <ul>
+            <li>
+              <a
+                href="https://www.chess.com/learn-how-to-play-chess"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit chess.com (opens in a new tab)">
+                Chess.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.chesscademy.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit chesscademy.com (opens in a new tab)">
+                Chesscademy.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.chessable.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit chessable.com (opens in a new tab)">
+                Chessable.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.chess24.com/en"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit chess24.com (opens in a new tab)">
+                Chess24.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.chessgames.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit chessgames.com (opens in a new tab)">
+                Chessgames.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.chessclub.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="visit chessclub.com (opens in a new tab)">
+                Chessclub.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <p>
+        Made by
         <a
-          href="https://www.github.com/"
+          href="https://github.com/hannaftw"
           target="_blank"
           rel="noopener"
-          aria-label="visit our github page (opens in a new tab)">
-          <i class="fa-brands fa-github red-icon">   
-          </i>
+          aria-label="visit hannaftw's github page (opens in a new tab)">
+          Hanna Bergsten
         </a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank"
-          rel="noopener"
-          aria-label="visit our linkedin page (opens in a new tab)">
-          <i class="fa-brands fa-linkedin red-icon">
-          </i>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener"
-          aria-label="visit our instagram page (opens in a new tab)">
-          <i class="fa-brands fa-instagram red-icon">  
-          </i>
-        </a>
-      </li>
-    </ul>
-  </footer>
+      </p>
+      <ul class="footer-icons">
+        <li>
+          <a
+            href="https://www.github.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="visit our github page (opens in a new tab)">
+            <i class="fa-brands fa-github red-icon"> </i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="visit our linkedin page (opens in a new tab)">
+            <i class="fa-brands fa-linkedin red-icon"> </i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener"
+            aria-label="visit our instagram page (opens in a new tab)">
+            <i class="fa-brands fa-instagram red-icon"> </i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
     <!-- JavaScript for FontAwesome kit - credit further in README.md -->
     <script
       src="https://kit.fontawesome.com/643645f09b.js"
-      crossorigin="anonymous">
-    </script>
+      crossorigin="anonymous"></script>
   </body>
 </html>
