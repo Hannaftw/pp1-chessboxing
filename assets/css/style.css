@@ -34,7 +34,7 @@ b {
 
 a {
   text-decoration: none;
-  font-weight: 550;
+  font-weight: 400;
 }
 
 h1 {
@@ -80,10 +80,9 @@ h3 {
 }
 
 .container-black a {
-  color: #fff;
+  color: #ff0000;
   display: inline;
   text-decoration: none;
-  font-weight: 550;
 }
 
 .container-white {
@@ -97,7 +96,7 @@ h3 {
 }
 
 .container-white a {
-  color: #000;
+  color: #ff0000;
   display: inline;
 }
 
@@ -262,20 +261,9 @@ nav a {
 
 #chessintro p {
   text-align: center;
-  line-height: 1.5;
 }
 
 /*Chessboxing specific styles */
-.introduction-text p {
-  padding: 10px;
-  margin: 0px;
-}
-
-.introduction-text h2 {
-  padding: 10px;
-  margin: 0;
-}
-
 .introduction-text h3 {
   padding-top: 15px;
 }
@@ -292,17 +280,8 @@ nav a {
   margin: 0;
 }
 
-#facts-black {
-  display: flex;
-  flex-direction: column;
-  background-color: #000;
-  color: #fff;
-}
-
 .intro-facts h3 {
-  font-size: 16px;
   line-height: 1.5;
-  font-weight: 700;
   text-align: center;
   margin-top: 10px;
 }
@@ -328,11 +307,8 @@ nav a {
 /* Rules styles */
 /* Trivia styles */
 .trivia h3 {
-  font-size: 16px;
-  font-weight: 700;
   margin: 0px;
   padding-top: 10px;
-  text-align: center;
 }
 
 .chess-quotes q {
@@ -349,9 +325,6 @@ nav a {
 }
 /* Summary styles */
 .summary p {
-  text-align: left;
-  line-height: 1.5;
-  padding: 15px;
   font-weight: 500;
   margin: 0px;
 }
@@ -440,20 +413,13 @@ footer ul {
     padding: 10px;
   }
 
-  h2 {
-    font-size: 28px;
-    font-weight: 700;
+  h2,
+  h3 {
+    font-size: 26px;
+    font-weight: 550;
     padding: 10px;
     margin: 0px;
     font-style: normal;
-  }
-
-  h3 {
-    font-size: 24px;
-    font-weight: 550;
-    padding: 5px;
-    margin: 0px;
-    font-style: italic;
   }
 
   #h1-chess {
@@ -542,11 +508,6 @@ footer ul {
   .introduction ul {
     font-size: 18px;
     padding: 20px;
-  }
-
-  .introduction-text h2 {
-    font-size: 30px;
-    padding: 5px;
   }
 
   /* Facts styles */
@@ -723,7 +684,7 @@ footer ul {
 @media screen and (min-width: 1024px) {
   /* General styles */
   * {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   body {
@@ -731,12 +692,13 @@ footer ul {
   }
 
   p {
-    font-size: 14px;
     margin: 0;
-    padding: 15px;
+    padding: 20px 40px;
+    font-size: 15px;
   }
+
   a {
-    font-weight: 650;
+    font-weight: 600;
   }
 
   h1 {
@@ -749,7 +711,8 @@ footer ul {
   h3 {
     font-size: 28px;
     margin: 0;
-    font-weight: 500;
+    font-weight: 650;
+    padding: 10px;
   }
 
   /* Container styles */
@@ -781,6 +744,10 @@ footer ul {
   .container-white img {
     width: 100%;
     height: auto;
+  }
+
+  ul {
+    padding: 15px;
   }
   /* Header styles */
   /* Navigation bar styles */
@@ -817,7 +784,7 @@ footer ul {
   }
 
   .q-hero {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   /* Title styles */
@@ -833,21 +800,16 @@ footer ul {
   #chessintromob {
     display: none;
   }
+
   .intro-facts {
     display: flex;
+    flex-direction: row;
   }
 
-  #facts-white {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .facts-white h3 {
-    padding: 0px 5px;
-  }
-
+.intro-facts p {
+  padding: 50px 20px;
+}
   .intro-facts ul {
-    font-size: 16px;
     margin-left: 10px;
   }
 
@@ -868,14 +830,9 @@ footer ul {
 
   /* Chessboxing specific styles */
   /* Introduction styles */
-  .introduction-cb {
-    display: block;
-  }
-
   .introduction-text {
     display: flex;
     flex-direction: row;
-    flex: 1;
   }
 
   .introduction-img {
@@ -924,6 +881,7 @@ footer ul {
   .rules {
     display: block;
   }
+
   .rules-cbgen {
     display: flex;
     flex-direction: row;
@@ -975,12 +933,11 @@ footer ul {
   /* Summary styles */
   .summary {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .summary p {
-    padding: 20px;
-    margin: 0px;
+    font-size: 15px;
   }
 
   /* Footer styles */
@@ -1035,8 +992,9 @@ footer ul {
   }
 
   /* Facts styles */
-  .facts-black {
-    display: none;
+  .intro-facts {
+    display: flex;
+    flex-direction: row-reverse;
   }
 
   .intro-facts h3 {
@@ -1051,9 +1009,12 @@ footer ul {
   }
 
   /* Summary styles */
+  .summary {
+    display: flex;
+    flex-direction: row;
+  }
   .summary p {
     font-size: 21px;
-    line-height: 1.5;
   }
 
   /* Footer styles */
