@@ -21,7 +21,7 @@ p {
   font-size: 12px;
   line-height: 1.52;
   font-weight: 400;
-  padding: 5px;
+  padding: 10px;
   margin: 0px;
 }
 
@@ -62,14 +62,23 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: 650;
+  padding: 10px;
+  margin: 0px;
+  font-style: normal;
+}
+
 /* Container styles */
 .container-black {
-  display: block;
+  display: flex;
   background-color: #000;
   color: #fff;
   width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .container-black a {
@@ -77,12 +86,13 @@ h2 {
 }
 
 .container-white {
-  display: block;
+  display: flex;
   background-color: #fff;
   color: #000;
   width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .container-white a {
@@ -91,6 +101,17 @@ h2 {
 
 .container-white img {
   width: 100%;
+}
+
+.container-black img {
+  width: 100%;
+  height: auto;
+}
+
+.container-white iframe {
+ width: 80%;
+ height: auto;
+ padding: 20px;
 }
 
 /* Header styles */
@@ -209,8 +230,13 @@ nav a {
   font-weight: 700;
 }
 
+.hero-title {
+  display: block;
+}
+
 /* Main styles */
 /* Title styles */
+/* Chess specific styles */
 .title .container-black img {
   width: 100%;
   padding: 10px 0px;
@@ -218,6 +244,7 @@ nav a {
 }
 
 /* Introduction styles */
+/* Chess page specific styles */
 #chessintrolaptop {
   display: none;
 }
@@ -226,6 +253,12 @@ nav a {
   text-align: left;
   display: block;
 }
+
+#chessintro p{
+  text-align: center;
+  line-height: 1.5;
+}
+
 /*Chessboxing specific styles */
 .introduction-text p {
   padding: 10px;
@@ -241,8 +274,13 @@ nav a {
   margin: 0;
 }
 
-/* Chessboxing specific styles */
+.introduction-text h3 {
+  padding-top: 15px;
+}
+
 /* Facts styles */
+/* Chessboxing specific styles */
+
 #facts-white {
   display: none;
 }
@@ -279,14 +317,20 @@ nav a {
   margin-left: 10px;
 }
 
-.container-black img {
-  width: 100%;
+.container-black q {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+  margin: 0px;
 }
 
 #img-text {
   display: none;
 }
-
+/* History styles */
+#ccurrently-laptop {
+  display: none;
+}
 /* Rules styles */
 /* Trivia styles */
 .trivia h3 {
@@ -430,7 +474,11 @@ footer ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
 
+  .container-black img {
+    width: 45vw;
+    height: auto;
   }
 
   /* Navigation bar styles */
@@ -647,7 +695,7 @@ display: block;
 padding: 5px;
 }
 
- 
+ /*
   .intro-facts ul {
     font-size: 18px;
     padding: 20px;
@@ -656,7 +704,8 @@ padding: 5px;
 
 ul a {
     text-decoration: none;
-  }
+  }*/
+
   /* footer styles */
   footer {
     padding: 5px;
@@ -732,10 +781,14 @@ ul a {
   }
 
   .container-black img {
-    display: flex;
-    flex: 1;
+    width: 100%;
+    height: auto;
   }
 
+  .container-white img {
+    width: 100%;
+    height: auto;
+  }
   /* Header styles */
   /* Navigation bar styles */
   #nav-logo {
@@ -823,7 +876,7 @@ ul a {
   /* Main styles */
   .title {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   /* Chessboxing specific styles */
@@ -840,52 +893,62 @@ ul a {
 
   .introduction-img {
     display: flex;
-    flex-direction: row;
-    flex: 1;
-  }
-
-  /* Facts styles */
-  .history {
-    display: flex;
     flex-direction: row-reverse;
   }
 
-  .history img {
-    width: 40vw;
+  #chessintro-img {
+    width: 90%;
     height: auto;
+  }
+
+  /* Facts styles */
+  /* History styles */
+  #ccurrently-mob {
+    display: none;
+  }
+
+  .history {
+    display: block;
+  }
+
+  .chess-history {
+    display: flex;
+    flex-direction: row;
+  }
+
+#ccurrently-laptop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+.chess-historyimg {
+  display: flex;
+  flex-direction: row;
+}
+
+  .container-black iframe {
+   padding: 15px;
   }
 
   /* Rules styles */
   /* Chessboxing specific styles */
   .rules {
-    display: flex;
-    flex-direction: column;
+    display: block;
   }
-
-  #rules-cbgen,
+.rules-cbgen {
+  display: flex;
+  flex-direction: row;
+}
   .rules-cbspec {
     display: flex;
+    flex-direction: row;
   }
 
-  .rules .container-black,
-  .container-white {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    height: 50vw;
-    width: auto;
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container-white iframe {
-    height: 40vw;
-    width: 45vw;
-  }
+  
 
   /* Trivia styles */
-
   .trivia {
     display: flex;
     flex-direction: row;
@@ -895,21 +958,25 @@ ul a {
     width: 40vw;
     height: auto;
   }
-  .trivia ul {
+
+  .container-black ul {
     font-size: 13px;
     display: flex;
     flex-direction: column;
     margin-right: 10px;
+    padding: 0;
   }
 
-  .trivia li {
-    padding: 2px 3px;
-  }
+ 
   .trivia ol {
     font-size: 12px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+  } 
+  
+  .trivia li {
+    padding: 0;
   }
   /* Learn more styles */
   .learn-more {
