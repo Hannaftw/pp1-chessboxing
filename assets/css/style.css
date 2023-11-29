@@ -24,24 +24,22 @@ body {
 
 /* Main styles */
 p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 400;
   padding: 10px;
   margin: 0px;
 }
 
-p a {
+b {
+  font-weight: 700;
+}
+
+a {
   text-decoration: none;
-  font-weight: 650;
-  display: inline;
+  font-weight: 550;
 }
 
 h1 {
   font-family: 'rye', cursive;
   font-size: 32px;
-  line-height: 1.5;
   color: #fff;
   font-weight: 500;
   text-align: center;
@@ -59,21 +57,14 @@ h1 {
   padding-bottom: 10px;
 }
 
-h2 {
-  font-size: 18px;
-  font-style: italic;
-  line-height: 1.5;
-  font-weight: 700;
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-}
-
+h2,
 h3 {
   font-size: 16px;
-  font-weight: 650;
-  padding: 10px;
-  margin: 0px;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -90,6 +81,9 @@ h3 {
 
 .container-black a {
   color: #fff;
+  display: inline;
+  text-decoration: none;
+  font-weight: 550;
 }
 
 .container-white {
@@ -104,6 +98,7 @@ h3 {
 
 .container-white a {
   color: #000;
+  display: inline;
 }
 
 .container-white img {
@@ -116,9 +111,9 @@ h3 {
 }
 
 .container-white iframe {
- width: 85%;
- height: auto;
- padding: 10px;
+  width: 85%;
+  height: auto;
+  padding: 10px;
 }
 
 /* Header styles */
@@ -206,7 +201,7 @@ nav a {
 .hero-section {
   height: 100vw;
   background: url('../images/hero-mikevs-medium.webp') no-repeat center
-  center/cover;
+    center/cover;
   background-size: contain;
   position: relative;
   display: flex;
@@ -251,6 +246,10 @@ nav a {
 }
 
 /* Introduction styles */
+.intro-facts {
+  display: flex;
+  flex-direction: row-reverse;
+}
 /* Chess page specific styles */
 #chessintrolaptop {
   display: none;
@@ -261,7 +260,7 @@ nav a {
   display: block;
 }
 
-#chessintro p{
+#chessintro p {
   text-align: center;
   line-height: 1.5;
 }
@@ -273,10 +272,6 @@ nav a {
 }
 
 .introduction-text h2 {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 700;
-  text-align: center;
   padding: 10px;
   margin: 0;
 }
@@ -288,24 +283,20 @@ nav a {
 /* Facts styles */
 /* Chessboxing specific styles */
 
-#facts-white {
-  display: none;
-}
-
 .intro-facts ul {
   list-style: disc;
   font-size: 11px;
-  line-height: 1.5;
   font-weight: 500;
   text-align: left;
   padding: 10px;
   margin: 0;
 }
 
-.facts-black {
+#facts-black {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  background-color: #000;
+  color: #fff;
 }
 
 .intro-facts h3 {
@@ -316,17 +307,12 @@ nav a {
   margin-top: 10px;
 }
 
-.intro-facts a {
-  font-weight: 550;
-}
-
 .intro-facts li {
   margin-left: 10px;
 }
 
 .container-black q {
-  font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 5px;
   margin: 0px;
 }
@@ -334,6 +320,7 @@ nav a {
 #img-text {
   display: none;
 }
+
 /* History styles */
 #ccurrently-laptop {
   display: none;
@@ -348,7 +335,7 @@ nav a {
   text-align: center;
 }
 
-.chess-quotes q  {
+.chess-quotes q {
   font-size: 11px;
   padding: 10px;
   margin: 0px;
@@ -389,42 +376,41 @@ footer {
   padding-top: 15px;
 }
 
-.footer-text {
-  flex: 1;
-  flex-direction: column;
-}
-
-.footer-text p {
-  align-items: center;
+#footer-text {
+  flex-direction: row;
   justify-content: center;
-  font-size: 12px;
+  align-items: left;
+  font-size: 10px;
+  display: flex;
+  gap: 1vw;
 }
 
-footer a {
+#footer-text a {
   font-weight: 800;
-  font-size: 12px;
   text-decoration: none;
   color: #ff0000;
+  font-size: 12px;
+  display: inline;
 }
 
 footer ul {
   display: flex;
   flex-direction: row;
+  justify-content: right;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer-icons {
-  flex: 1;
-  align-items: center;
-  justify-content: right;
+#footer-icons {
+  display: flex;
   gap: 5vw;
+  flex: 1;
 }
 
 .red-icon {
   color: #ff0000;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 /* Media queries */
@@ -461,7 +447,7 @@ footer ul {
     margin: 0px;
     font-style: normal;
   }
-  
+
   h3 {
     font-size: 24px;
     font-weight: 550;
@@ -469,7 +455,7 @@ footer ul {
     margin: 0px;
     font-style: italic;
   }
-  
+
   #h1-chess {
     font-size: 70px;
   }
@@ -560,7 +546,6 @@ footer ul {
 
   .introduction-text h2 {
     font-size: 30px;
-    font-weight: 700;
     padding: 5px;
   }
 
@@ -572,8 +557,6 @@ footer ul {
   }
 
   .intro-facts h3 {
-    font-size: 30px;
-    font-weight: 700;
     margin: 0px;
     padding-top: 10px;
   }
@@ -583,101 +566,100 @@ footer ul {
   }
 
   .intro-facts ul {
-    font-size: 18px;
     padding: 20px;
     margin-bottom: 10px;
-  } 
+  }
 
   #img-text {
     display: none;
   }
 
-/* History styles */
-.history h2 {
-  margin-top: 15px;
-}
+  /* History styles */
+  .history h2 {
+    margin-top: 15px;
+  }
 
-/* Rules styles */
-.rules p {
-  padding: 10px;
-}
+  /* Rules styles */
+  .rules p {
+    padding: 10px;
+  }
 
-.rules h2 {
-  margin-top: 5px;
-}
+  .rules h2 {
+    margin-top: 5px;
+  }
 
-.rules h3 {
-  font-style: normal;
-  padding: 10px;
-  margin-top: 10px;
-  font-weight: 650;
-} 
+  .rules h3 {
+    font-style: normal;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 650;
+  }
 
-.rules ul {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0px;
-  padding-bottom: 10px;
-}
+  .rules ul {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
 
-.rules li {
-  padding: 5px 10px;
-}
+  .rules li {
+    padding: 5px 10px;
+  }
 
-/* Trivia styles */
+  /* Trivia styles */
 
-.trivia h2 {
-  font-size: 32px;
-  font-weight: 500;
-  margin: 0px;
-  padding: 10px;
-  text-align: center;
-  font-style: normal;
-}
+  .trivia h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    font-style: normal;
+  }
 
-.trivia h3 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 10px;
-  text-align: center;
-  font-style: normal;
-  padding: 15px;
-}
+  .trivia h3 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    padding: 15px;
+  }
 
-.trivia ul {
-  font-size: 18px;
-  padding: 0px 10px;
-  margin: 0px;
-  list-style-type: none;
-}
+  .trivia ul {
+    font-size: 18px;
+    padding: 0px 10px;
+    margin: 0px;
+    list-style-type: none;
+  }
 
-.trivia img {
-  width: 85%;
-  height: auto;
-  padding: 15px;
-  margin-top: 10px;
-}
+  .trivia img {
+    width: 85%;
+    height: auto;
+    padding: 15px;
+    margin-top: 10px;
+  }
 
-/* Chess specific styles */
-.chess-quotes {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
+  /* Chess specific styles */
+  .chess-quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.chess-quotes p {
-  padding: 0px;
-}
+  .chess-quotes p {
+    padding: 0px;
+  }
 
-.chess-quotes li  {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 10px;
-}
+  .chess-quotes li {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+  }
 
   .chess-quotes q {
     font-size: 18px;
@@ -685,40 +667,28 @@ align-items: center;
     text-align: center;
     font-weight: 600;
     padding: 5px 0px 5px 0px;
-  }  
-}
+  }
 
-/* Learn more styles */
-/* Chess specific styles */
-.learnmore-links {
-  display: block;
-} 
+  /* Learn more styles */
+  /* Chess specific styles */
+  .learnmore-links {
+    display: block;
+  }
 
-.learnmore-links ul {
-  padding: 10px;
-  list-style-type: circle;
-  margin: 0px;
-}
+  .learnmore-links ul {
+    padding: 10px;
+    list-style-type: circle;
+    margin: 0px;
+  }
 
-.learnmore-links li {
-font-size: 18px;
-font-weight: 600;
-display: block;
-padding: 5px;
-}
-
- /*
-  .intro-facts ul {
+  .learnmore-links li {
     font-size: 18px;
-    padding: 20px;
-    margin-bottom: 10px;
-  } 
+    font-weight: 600;
+    display: block;
+    padding: 5px;
+  }
 
-ul a {
-    text-decoration: none;
-  }*/
-
-  /* footer styles */
+  /*footer styles */
   footer {
     padding: 5px;
   }
@@ -747,26 +717,39 @@ ul a {
   .red-icon {
     font-size: 36px;
   }
-
+}
 
 /* Media query: large devices (laptops, 1024px and up) */
 @media screen and (min-width: 1024px) {
   /* General styles */
+  * {
+    font-size: 14px;
+  }
+
   body {
     display: block;
   }
 
   p {
-    line-height: 1.5;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 14px;
     margin: 0;
+    padding: 15px;
+  }
+  a {
+    font-weight: 650;
+  }
+
+  h1 {
+    font-size: 55px;
+    margin: 0px;
     padding: 10px;
   }
 
-  h2 {
-    font-size: 32px;
+  h2,
+  h3 {
+    font-size: 28px;
     margin: 0;
+    font-weight: 500;
   }
 
   /* Container styles */
@@ -778,7 +761,6 @@ ul a {
     width: auto;
     justify-content: center;
     align-items: center;
-
   }
 
   .container-white {
@@ -787,7 +769,6 @@ ul a {
     flex: 1;
     height: 50vw;
     width: auto;
-   
     justify-content: center;
     align-items: center;
   }
@@ -813,7 +794,7 @@ ul a {
   .navbar {
     border: 1px solid #fff;
     border-radius: 10px;
-    margin: 20px;
+    margin-bottom: 10px;
   }
 
   .nav-links a {
@@ -856,18 +837,12 @@ ul a {
     display: flex;
   }
 
-  .facts-black {
-    display: none;
-  }
-
-  .facts-white {
+  #facts-white {
     display: flex;
     flex-direction: column;
   }
 
   .facts-white h3 {
-    font-size: 24px;
-    font-weight: 700;
     padding: 0px 5px;
   }
 
@@ -928,20 +903,20 @@ ul a {
     flex-direction: row;
   }
 
-#ccurrently-laptop {
+  #ccurrently-laptop {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-.chess-historyimg {
-  display: flex;
-  flex-direction: row;
-}
+  .chess-historyimg {
+    display: flex;
+    flex-direction: row;
+  }
 
   .container-black iframe {
-   padding: 15px;
+    padding: 15px;
   }
 
   /* Rules styles */
@@ -949,16 +924,14 @@ ul a {
   .rules {
     display: block;
   }
-.rules-cbgen {
-  display: flex;
-  flex-direction: row;
-}
+  .rules-cbgen {
+    display: flex;
+    flex-direction: row;
+  }
   .rules-cbspec {
     display: flex;
     flex-direction: row;
   }
-
-  
 
   /* Trivia styles */
   .trivia {
@@ -979,14 +952,13 @@ ul a {
     padding: 0;
   }
 
- 
   .trivia ol {
     font-size: 12px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-  } 
-  
+  }
+
   .trivia li {
     padding: 0;
   }
@@ -1007,15 +979,8 @@ ul a {
   }
 
   .summary p {
-    font-size: 16px;
     padding: 20px;
     margin: 0px;
-    line-height: 1.75;
-  }
-
-  .summary a {
-    font-weight: 750;
-    display: inline;
   }
 
   /* Footer styles */
