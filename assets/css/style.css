@@ -304,6 +304,14 @@ nav a {
 #ccurrently-laptop {
   display: none;
 }
+
+#bhistotory-quote {
+  text-align: center;
+  font-style: italic;
+  padding: 5px;
+  margin: 0px;
+  font-weight: 500;
+}
 /* Rules styles */
 /* Trivia styles */
 .trivia h3 {
