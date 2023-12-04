@@ -5,7 +5,7 @@
   font-family: 'montserrat', sans-serif;
   font-size: 12px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /* General styles */
@@ -24,17 +24,19 @@ body {
 
 /* Main styles */
 p {
-  padding: 10px;
+  padding: 12px;
   margin: 0px;
 }
 
 b {
-  font-weight: 700;
+  font-weight: 750;
 }
 
 a {
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
+  color: #ff0000;
+  display: inline;
 }
 
 h1 {
@@ -46,6 +48,9 @@ h1 {
   margin: 2px;
 }
 
+.hero h1 {
+  padding-top: 10px;
+}
 #h1-chess {
   font-size: 40px;
   padding: 0px;
@@ -60,12 +65,14 @@ h1 {
 h2,
 h3 {
   font-size: 16px;
-  font-weight: 500;
   text-align: center;
-  padding: 5px;
   margin: 0;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 550;
+  padding-top: 10px;
+}
+
+.hero h2 {
+  padding: 0px 0px 10px;
 }
 
 /* Container styles */
@@ -79,12 +86,6 @@ h3 {
   flex-direction: column;
 }
 
-.container-black a {
-  color: #ff0000;
-  display: inline;
-  text-decoration: none;
-}
-
 .container-white {
   display: flex;
   background-color: #fff;
@@ -95,28 +96,21 @@ h3 {
   flex-direction: column;
 }
 
-.container-white a {
-  color: #ff0000;
-  display: inline;
-}
-
+.container-black img,
 .container-white img {
-  width: 100%;
-}
-
-.container-black img {
   width: 100%;
   height: auto;
 }
 
-.container-white iframe {
+.container-white iframe,
+.container-black iframe {
   width: 85%;
   height: auto;
   padding: 10px;
 }
 
 /* Header styles */
-/* navigation bar styles */
+/* Navigation bar styles */
 .navbar {
   display: flex;
   flex-direction: row;
@@ -247,8 +241,9 @@ nav a {
 /* Introduction styles */
 .intro-facts {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
+
 /* Chess page specific styles */
 #chessintrolaptop {
   display: none;
@@ -270,26 +265,6 @@ nav a {
 
 /* Facts styles */
 /* Chessboxing specific styles */
-
-.intro-facts ul {
-  list-style: disc;
-  font-size: 11px;
-  font-weight: 500;
-  text-align: left;
-  padding: 10px;
-  margin: 0;
-}
-
-.intro-facts h3 {
-  line-height: 1.5;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.intro-facts li {
-  margin-left: 10px;
-}
-
 .container-black q {
   font-weight: 500;
   padding: 5px;
@@ -312,7 +287,9 @@ nav a {
   margin: 0px;
   font-weight: 500;
 }
+
 /* Rules styles */
+
 /* Trivia styles */
 .trivia h3 {
   margin: 0px;
@@ -331,18 +308,10 @@ nav a {
   margin: 0px;
   list-style-type: none;
 }
+
 /* Summary styles */
-.summary p {
-  font-weight: 500;
-  margin: 0px;
-}
-
-.summary-text {
-  display: none;
-}
-
 .disclaimer {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
 }
 
@@ -400,7 +369,7 @@ footer ul {
   /* General styles */
   * {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 550;
   }
 
   body {
@@ -409,9 +378,13 @@ footer ul {
 
   p {
     font-size: 18px;
-    font-weight: 500;
     padding: 15px;
     margin: 0px;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 700;
   }
 
   h1 {
@@ -424,7 +397,7 @@ footer ul {
   h2,
   h3 {
     font-size: 26px;
-    font-weight: 550;
+    font-weight: 600;
     padding: 10px;
     margin: 0px;
     font-style: normal;
@@ -434,24 +407,7 @@ footer ul {
     font-size: 70px;
   }
 
-  .container-black {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container-white {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container-black img {
-    width: 45vw;
-    height: auto;
-  }
+  /* Container styles */
 
   /* Navigation bar styles */
   .menu-icon-label {
@@ -489,8 +445,6 @@ footer ul {
   /* Home specific styles */
   /* Hero styles */
   .hero-section {
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
   }
@@ -498,8 +452,6 @@ footer ul {
   .hero-section p {
     font-size: 20px;
     width: 85%;
-    font-style: italic;
-    text-align: center;
   }
 
   /* General styles */
@@ -509,21 +461,13 @@ footer ul {
     height: auto;
     padding: 15px;
   }
-  .introduction a {
-    font-weight: 750;
-  }
 
   .introduction ul {
-    font-size: 18px;
     padding: 20px;
   }
 
   /* Facts styles */
   /* Chessboxing specific styles */
-  #facts-black {
-    display: flex;
-    flex-direction: column;
-  }
 
   .intro-facts h3 {
     margin: 0px;
@@ -657,7 +601,13 @@ footer ul {
     padding: 5px;
   }
 
-  /*footer styles */
+  /* Summary styles */
+  .disclaimer {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  /* Footer styles */
   footer {
     padding: 5px;
   }
@@ -702,11 +652,11 @@ footer ul {
   p {
     margin: 0;
     padding: 20px 40px;
-    font-size: 15px;
   }
 
   a {
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 650;
   }
 
   h1 {
@@ -721,6 +671,10 @@ footer ul {
     margin: 0;
     font-weight: 650;
     padding: 10px;
+  }
+
+  ul {
+    padding: 15px;
   }
 
   /* Container styles */
@@ -744,19 +698,6 @@ footer ul {
     align-items: center;
   }
 
-  .container-black img {
-    width: 100%;
-    height: auto;
-  }
-
-  .container-white img {
-    width: 100%;
-    height: auto;
-  }
-
-  ul {
-    padding: 15px;
-  }
   /* Header styles */
   /* Navigation bar styles */
   #nav-logo {
@@ -797,14 +738,11 @@ footer ul {
 
   /* Title styles */
   .title img {
-    width: 100%;
-    height: auto;
     padding: 10px 0px;
     margin: 0px;
   }
 
   /* Introduction styles */
-
   #chessintromob {
     display: none;
   }
@@ -814,15 +752,8 @@ footer ul {
     flex-direction: row;
   }
 
-.intro-facts p {
-  padding: 50px 20px;
-}
-  .intro-facts ul {
-    margin-left: 10px;
-  }
-
-  .intro-facts li {
-    padding: 3px 10px;
+  .intro-facts p {
+    padding: 50px 20px;
   }
 
   #intro-img {
@@ -871,8 +802,6 @@ footer ul {
   #ccurrently-laptop {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
   }
 
   .chess-historyimg {
@@ -880,7 +809,8 @@ footer ul {
     flex-direction: row;
   }
 
-  .container-black iframe {
+  .container-black iframe,
+  .container-white iframe {
     padding: 15px;
   }
 
@@ -894,6 +824,7 @@ footer ul {
     display: flex;
     flex-direction: row;
   }
+
   .rules-cbspec {
     display: flex;
     flex-direction: row;
@@ -908,14 +839,6 @@ footer ul {
   .trivia img {
     width: 40vw;
     height: auto;
-  }
-
-  .container-black ul {
-    font-size: 13px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    padding: 0;
   }
 
   .trivia ol {
@@ -934,10 +857,6 @@ footer ul {
     flex-direction: row;
   }
 
-  .learn-more .container-black {
-    display: flex;
-    flex-direction: column;
-  }
   /* Summary styles */
   .summary {
     display: flex;
@@ -974,8 +893,12 @@ footer ul {
 /* Media query:  x-large devices (Desktop and large laptops , 1400px and up) */
 @media screen and (min-width: 1400px) {
   /* General styles */
+  * {
+    font-size: 20px;
+  }
+
   body {
-    padding: 10px;
+    padding: 15px;
   }
   /* Container styles */
   .container-white a {
@@ -1005,24 +928,10 @@ footer ul {
     flex-direction: row-reverse;
   }
 
-  .intro-facts h3 {
-    font-size: 30px;
-  }
-
-  .intro-facts ul {
-    font-size: 21px;
-  }
-  .intro-facts li {
-    padding: 3px 10px;
-  }
-
   /* Summary styles */
   .summary {
     display: flex;
     flex-direction: row;
-  }
-  .summary p {
-    font-size: 21px;
   }
 
   /* Footer styles */
@@ -1037,15 +946,14 @@ footer ul {
   }
 }
 
-/* Media query: xx-large deviced (Desktop large monitor, 1920px and up) */
-/*
+/*Media query: xx-large deviced (Desktop large monitor, 1920px and up) */
+/* NOTE/TO DO should this really be included?
 @media screen and (min-width: 1920px) {
 
+* {
+  font-size: 24px;
 
-  .container-black {
-    display: flex;
-  }
-    .facts-black {
-    display: none;
-  }
-} */
+body: {
+    padding: 20px;
+  } 
+}*/
