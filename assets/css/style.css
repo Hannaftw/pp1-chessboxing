@@ -233,7 +233,7 @@ nav a {
 /* Main styles */
 /* Title styles */
 /* Chess specific styles */
-.title .container-black img {
+.title img {
   width: 100%;
   padding: 10px 0px;
   margin: 0px;
@@ -251,42 +251,17 @@ nav a {
   font-weight: 800;
   font-size: larger;
 }
-/* Chess page specific styles */
-#chessintrolaptop {
-  display: none;
-}
 
-#chessintromob .container-black {
-  text-align: left;
-  display: block;
-}
-
-#chessintro p {
-  text-align: center;
-}
-
-/*Chessboxing specific styles */
+/* Chessboxing specific styles */
 .introduction-text h3 {
   padding-top: 15px;
 }
 
 /* Facts styles */
-/* Chessboxing specific styles */
-.container-black q {
-  font-weight: 500;
-  padding: 5px;
-  margin: 0px;
-}
 
-#img-text {
-  display: none;
-}
+
 
 /* History styles */
-#ccurrently-laptop {
-  display: none;
-}
-
 #bhistotory-quote {
   text-align: center;
   font-style: italic;
@@ -296,24 +271,18 @@ nav a {
 }
 
 /* Rules styles */
+.rules li {
+  padding: 5px 10px;
+}
 
 /* Trivia styles */
-.trivia h3 {
-  margin: 0px;
-  padding-top: 10px;
+.chess-quotes {
+font-weight: 500;
+  font-style: italic;
 }
 
 .chess-quotes q {
-  font-size: 11px;
-  padding: 10px;
-  margin: 0px;
-}
-
-.trivia ul {
-  font-size: 11px;
-  padding: 10px;
-  margin: 0px;
-  list-style-type: none;
+  padding: 5px;
 }
 
 /* Summary styles */
@@ -331,6 +300,7 @@ nav a {
 .img-cap {
   text-align: center;
   font-style: italic;
+  padding: 0px;
 }
 
 /* Footer styles */
@@ -368,12 +338,16 @@ footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  gap: 5vw;  
+  flex: 1;
 }
 
-#footer-icons {
+.footer-icons li {
   display: flex;
+  justify-content: space-between;
+  align-items: right;
   gap: 5vw;
-  flex: 1;
+  margin-right: 20px;
 }
 
 .red-icon {
@@ -551,23 +525,10 @@ footer ul {
   }
 
   /* Trivia styles */
-
-  .trivia h2 {
-    font-size: 32px;
-    font-weight: 500;
+  .trivia h2, .trivia h3 {
     margin: 0px;
-    padding: 10px;
-    text-align: center;
-    font-style: normal;
-  }
-
-  .trivia h3 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 10px;
-    text-align: center;
-    font-style: normal;
-    padding: 15px;
+    padding-top: 10px;
+    font-size: 20px;
   }
 
   .trivia ul {
@@ -638,6 +599,7 @@ footer ul {
     width: 100%;
     height: auto;
   }
+
   .disclaimer {
     font-size: 15px;
     font-weight: 400;
@@ -651,7 +613,7 @@ footer ul {
 
   /* Footer styles */
   footer {
-    padding: 5px;
+    padding: 15px;
   }
 
   footer a {
@@ -668,6 +630,7 @@ footer ul {
 
   .footer-icons {
     margin-right: 20px;
+    align-items: center;
   }
 
   .footer-icons li {
@@ -676,7 +639,7 @@ footer ul {
   }
 
   .red-icon {
-    font-size: 36px;
+    font-size: 50px;
   }
 }
 
