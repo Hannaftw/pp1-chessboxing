@@ -51,6 +51,7 @@ h1 {
 .hero h1 {
   padding-top: 10px;
 }
+
 #h1-chess {
   font-size: 40px;
   padding: 0px;
@@ -244,6 +245,12 @@ nav a {
   flex-direction: column;
 }
 
+#home-question {
+  color: red;
+  font-style: italic;
+  font-weight: 800;
+  font-size: larger;
+}
 /* Chess page specific styles */
 #chessintrolaptop {
   display: none;
@@ -310,9 +317,20 @@ nav a {
 }
 
 /* Summary styles */
+.summary img {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
 .disclaimer {
   font-size: 11px;
   font-weight: 400;
+}
+
+.img-cap {
+  text-align: center;
+  font-style: italic;
 }
 
 /* Footer styles */
@@ -369,7 +387,7 @@ footer ul {
   /* General styles */
   * {
     font-size: 18px;
-    font-weight: 550;
+    font-weight: 500;
   }
 
   body {
@@ -385,7 +403,7 @@ footer ul {
   .disclaimer {
     font-size: 16px;
   }
-  
+
   a {
     font-size: 18px;
     font-weight: 700;
@@ -426,6 +444,10 @@ footer ul {
     margin-right: 20px;
   }
 
+  nav a {
+    font-size: 22px;
+  }
+
   .nav-links {
     flex-direction: row;
     gap: 5vw;
@@ -437,12 +459,11 @@ footer ul {
     border: none;
     margin: 0;
     padding: 0;
-    font-size: 18px;
   }
 
   #nav-logo {
     width: auto;
-    height: 65px;
+    height: 80px;
   }
 
   /* Main styles */
@@ -460,6 +481,13 @@ footer ul {
 
   /* General styles */
   /* Introduction styles */
+  #home-question {
+    color: red;
+    font-style: italic;
+    font-weight: 800;
+    font-size:larger;
+  }
+
   .introduction img {
     width: 85%;
     height: auto;
@@ -472,7 +500,6 @@ footer ul {
 
   /* Facts styles */
   /* Chessboxing specific styles */
-
   .intro-facts h3 {
     margin: 0px;
     padding-top: 10px;
@@ -606,9 +633,20 @@ footer ul {
   }
 
   /* Summary styles */
+  .summary img {
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+  }
   .disclaimer {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
+  }
+
+.img-cap {
+    text-align: center;
+    font-style: italic;
+    padding: 15px 35px 30px;
   }
 
   /* Footer styles */
@@ -881,11 +919,6 @@ footer ul {
   .footer-icons {
     flex: 1;
     margin-right: 40px;
-  }
-
-  #footer-text {
-    flex: 1;
-    padding: 0;
   }
 
   .red-icon {
