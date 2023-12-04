@@ -382,6 +382,10 @@ footer ul {
     margin: 0px;
   }
 
+  .disclaimer {
+    font-size: 16px;
+  }
+  
   a {
     font-size: 18px;
     font-weight: 700;
