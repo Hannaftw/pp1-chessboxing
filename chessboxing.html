@@ -27,18 +27,21 @@
   <body>
     <!-- Header section -->
     <header>
-      <!-- Navbar section -->
+      <!-- Navigation bar -->
+      <!-- Dropdown-menu with "burger" icon for mobile version -->
       <section class="navbar">
         <!-- h2 added hidden for semantic HTML -->
-        <h2 class="hidden">Header navigation bar</h2>
+        <h2 class="hidden">
+          Navigation bar in header
+        </h2>
         <a
           href="index.html"
           aria-label="The page that is active Home">
-          <img
-            src="assets/images/navicon.webp"
-            alt="chessboxing official logo"
-            id="nav-logo"
-            aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)" />
+        <img
+          src="assets/images/navicon.webp"
+          alt="chessboxing official logo"
+          id="nav-logo"
+          aria-label="Official logo of the Chessboxing Federation, a chesspiece and the letter B (for boxing)" />
         </a>
         <input
           type="checkbox"
@@ -47,9 +50,11 @@
         <label
           for="menu-icon"
           class="menu-icon-label">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars">
+          </i>
         </label>
-        <!-- Navigation bar -->
+        
+        <!-- Navigation links - for size 768px and bigger screens, displayed horizontally in the navigation bar  -->
         <nav>
           <!-- h3 added hidden for semantic HTML -->
           <h3 class="hidden">Navigation Bar links</h3>
@@ -126,8 +131,8 @@
             prowess.
             <br>
             <br>
-            Historically, we've often admired either strength or smarts, but
-            rarely both together. Chessboxing challenges this notion by
+            Historically, we've admired either strength or smarts, but
+            rarely both. Chessboxing challenges this notion by
             requiring competitors to excel in both strategic thinking and
             physical strength. Competitors must master and be able to switch
             between the focused, strategic world of chess and the intense,
@@ -144,58 +149,67 @@
         <div class="container-white">
           <img
             src="assets/images/cb-animatedap-large.webp"
-            id="chessintro-img"
+            id="cbintro-img"
             alt="a black and white animated image displaying chesspieces and boxing equipment"
             aria-label="a black and white animated image displaying four sections with chess pieces and boxing equipment" />
+          <p class="img-cap"> 
+            Historically, we've admired either strength or smarts, but rarely combined. Chessboxing challenges this notion 
+            as competitors must master and be able to quickly switch between the intellectual world of chess and the physically demanding realm of boxing. 
+            Demanding a unique combination of mental sharpness and physical endurance that is not common in the world of sport.
+            Perhaps the quintessential chessboxing champion is representing a new kind of competitor to be admired, 
+            one who embodies the best of both worlds: mental acuity and physical power. When it comes to brains or brawn, it is not longer about choosing one over the other but to master both.
+          </p>
         </div>
       </section>
 
       <!-- History section -->
       <section class="history">
-        <div class="container-black">
-          <h3>
-            The history of chessboxing
-          </h3>
-          <p>
-            Invented in 2003 by the Dutch artist Iepe Rubingh, but how did he
-            come up with the idea? Rubingh was inspired by the 1992 graphic
-            novel "Froid Équateur" by Enki Bilal. In the graphic novel, set in a
-            dystopian future, a version of chessboxing is the most popular sport
-            in the world. After reading this, Rubingh, being an artist decided
-            to create a live version of the sport as a piece of performance art.
-            Luckily, he saw the potential of the sport and decided to create a
-            real life version but without the dystopia. Had it not been for this
-            stroke of brilliance, the history of chessboxing would have ended as
-            a little known piece of performance art .
-          </p>
-        </div>
-        <div class="container-black">
-          <h3>
-            A look at chessboxing
-          </h3>
-          <br />
-          <iframe
-            src="https://www.youtube.com/embed/7MBcs5Z4KC4?si=WMclXZThJrAhtWRN"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            aria-label="Video embedded from USA TODAY Sports Youtube Page, if clicked takes you to youtube, opens in new tab">
-          </iframe>
-          <p>
-            A sport like this surely can make you question what abilities that you value the most, brains or brawn? 
-            I find myself thinking that of course being good at chess is more impressive than being a strong fighter... or what do I really think?
-            It almost seems improssible to decide! Perhaps it's not a question of which is more impressive, but rather which is more important in order for you to prevail?
-            On a more personal note, I find myself wondering what kind of competitor I would be. Maybe it would be fun to try it out, but I'm not sure I would be able to handle the pressure.
-            Maybe it comes as no surprise that I, the creator of this site has a background both in chess and boxing. But, more on that later as we tie this whole thing together with some reflections and a conclusion.
-            But, do think about it, what part of the match do you find most impressive or interesting? 
-            Are you one for the muscles or the mind? Would you rather win by checkmate or knockout? Or perhaps a better question would be, would you prefer to be loose in the ring or on the board?
-          </p>
+        <div class="cb-history">
+          <div class="container-black">
+            <h3>
+              Chessboxing history
+            </h3>
+            <p>
+              The sport came to life in 2003 through the work of the Dutch artist Iepe Rubingh, but how did he
+              come up with the idea? Rubingh was inspired by the 1992 graphic
+              novel "Froid Équateur" by Enki Bilal. In the graphic novel, set in a
+              dystopian future, a version of chessboxing is the most popular sport
+              in the world. After reading this, Rubingh, being an artist decided
+              to create a live version of the sport as a piece of performance art.
+              Luckily, he saw the potential of the sport and decided to create a
+              real life version but without the dystopia. Had it not been for this
+              stroke of brilliance, the history of chessboxing would have ended as
+              a little known piece of performance art.
+            </p>
+          </div>
+          <div class="container-white">
+          <!-- h3 added but not displayed for semantic reasons -->
+            <h3 class="hidden">
+            Chessboxing in action
+            </h3>
+            <br />
+            <iframe
+              src="https://www.youtube.com/embed/7MBcs5Z4KC4?si=WMclXZThJrAhtWRN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              aria-label="Video embedded from USA TODAY Sports Youtube Page, if clicked takes you to youtube, opens in new tab">
+            </iframe>
+            <p>
+              Brains or brawn... perhaps it's not a question of which is more impressive, but rather which is more important in order for you to prevail?
+              On a personal note, I find myself wondering what kind of competitor I would be. Maybe it would be fun to try it out, but I'm not sure I would be able to handle the pressure.
+              Maybe it comes as no surprise that I, the creator of this site has a background both in chess and boxing. But, more on that later as we tie this whole thing together with some reflections and a conclusion.
+              But, do think about it, what part of the match do you find most impressive or interesting? 
+              Are you one for the muscles or the mind? Would you rather win by checkmate or knockout? Or perhaps a better question would be, would you prefer to be loose in the ring or on the board?
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Rules section -->
       <section class="rules">
+        <div class="cb-rules">
           <div class="container-black">
             <h2>The rules of chessboxing</h2>
             <p>
@@ -232,112 +246,170 @@
             </p>
           </div>
           <div class="container-white">
-            <img 
-              src="assets\images\logo2.webp"
-              alt="a version of the logo for the World Chessboxing Organisation"
-              aria-label="a black and white picture of a chess piece and the letter b with a plus sign between them, becoming a version of the logo for the World Chessboxing Organisation" />
+            <h3>Chess and boxing rules</h3>
+            <p>
+              The rules of 
+                <a
+                  href="chess.html"
+                  aria-label="internal link that takes you to the page chess">
+                chess
+                </a> 
+              are the in general the same as in chess, the difference is that the players have a
+              total of 12 minutes each to make all their moves. This done with the short rounds and by implementing a playing a variant of chess known as 
+                <a
+                  href="https://en.wikipedia.org/wiki/fast_chess"
+                  aria-label="external link to the wikipedia page about fast chess, opens in a new tab">
+                  fast chess
+                </a> 
+              or as it also known, speed chess. 
+              <br>
+              <br>
+              The rules for the rounds of 
+              <a 
+                href="boxing.html"
+                aria-label="internal link that redirects you to the page boxing">
+                boxing
+              </a> 
+              are the same as in regular boxing, with some exeptions. The match consists of five rounds, with sixth round added should there be a draw after the last round of chess. 
+              Additionally if the tournament requires is the competitors wear protective gear, such as gear to protect their heads. Usually this is only required in amateur events, 
+              but it is becoming more common in professional events. This is due to the fact that risk of injuries, especially head-injuries, are high and the WCBO takes the safety of their competitors very seriously.
+              The weight-classes are also slightly different, but mostly based on the ones used in boxing. They may differ depending on a descision made by the organizers of a match or tournaments as well as if it is a professional or amateur event.
+              Even if it would be great if chessboxing events attracted as many competitors as boxing, but it is still a relatively small and therefore doesn't have the same need for as many weight-classes. 
+              The weight-classes are not as strict as in boxing, since the competitors are not only judged on their weight but also their skill in chess.
+              Still, the weight-classes are important since the competitors need to be evenly matched for the match to be fair.
+            </p>
+          </div>
           </div>
       </section>
 
       <!-- Trivia and fun facts section -->
       <section class="trivia">
-        <div class="container-black">
-          <h3>Trivia and fun facts</h3>
-          <ul>
-            <li>
-              The popular Netflix miniseries “The Queens Gambit” is dedicated to
-              the founder Rubingh. He is credited as an “On-Set Chess
-              Consultant” for the series.
-            </li>
-            <li>
-              In the 1992 graphic novel "Froid Équateur" by Enki Bilal the rules
-              were slightly different. A whole boxing match was played before
-              the chess game. Rubingh thought that this was impractical and
-              adjusted the rules according to his vision.
-            </li>
-            <li>
-              The first chessboxing win was due to one of the players exceeding
-              the time limit in chess.
-            </li>
-            <li>
-              The chess is played on board specially designed for chessboxing,
-              exactly how it differs from a regular board is a little unclear.
-              It has the same dimensions as a regular board, eight by eight
-              squares, and the players have the same set up of pieces as in
-              regular chess. The chess clock however is not the same as a
-              regular chess clock, it is adapted for speed chess.
-            </li>
-            <li>
-              The founder Iepe Rubingh, was born on the 17th of August (1974) which by pure
-              coincidence is the same day of birth as the legendary chess player
-              Robert James Fischer... but perhaps more importantly it is also the
-              birthday of the maker of this website.
-            </li>
-          </ul>
-        </div>
+        <div class="cb-trivia">
+          <div class="container-black">
+            <h3>Trivia and fun facts</h3>
+            <ul>
+              <li>
+                The popular Netflix miniseries “The Queens Gambit” is dedicated to
+                the founder Rubingh. He is credited as an “On-Set Chess
+                Consultant” for the series.
+              </li>
+              <li>
+                In the 1992 graphic novel "Froid Équateur" by Enki Bilal the rules
+                were slightly different. A whole boxing match was played before
+                the chess game. Rubingh thought that this was impractical and
+                adjusted the rules according to his vision.
+              </li>
+              <li>
+                The first chessboxing win was due to one of the players exceeding
+                the time limit in chess.
+              </li>
+              <li>
+                The chess is played on board specially designed for chessboxing,
+                exactly how it differs from a regular board is a little unclear.
+                It has the same dimensions as a regular board, eight by eight
+                squares, and the players have the same set up of pieces as in
+                regular chess. The chess clock however is not the same as a
+                regular chess clock, it is adapted for speed chess.
+              </li>
+              <li>
+                The founder Iepe Rubingh, was born on the 17th of August (1974) which by pure
+                coincidence is the same day of birth as the legendary chess player
+                Robert James Fischer... but perhaps more importantly it is also the
+                birthday of the maker of this website.
+              </li>
+            </ul>
+          </div>
         <div class="container-black">
           <img 
             src="assets\images\cb-comic3.webp"
             alt="the front page of the edition of the graphic novel Froid Équateur by Enki Bilal was the inspiration for chessboxing"
             aria-label="the front page of the edition of the graphic novel Froid Équateur by Enki Bilal was the inspiration for chessboxing" />
         </div>
-        <div class="container-white">
-          <h3>The ten golden rules of Chessboxing</h3>
-          <p>
-            These are the rules every player should follow to make their
-            chessboxing life easier, stated in the
-            <a
-              href="https://wcbochessboxing.org/wcbo-rules/"
-              target="_blank"
-              aria-label="link to the rules page of the World Chessboxing Organisation, opens in new tab"
-              rel="noopener">
-              rule book
-            </a>
-            of the World Chessboxing Organisation.
-          </p>
-          <ol>
-            <li>
-              Always remember you have decided for a combined sport, that means
-              you've got to work twice as much and twice as hard as the others.
-            </li>
-            <li>Control yourself before your opponent does.</li>
-            <li>
-              If your position on the board is bad, make it a long game, when
-              you're on top make it short.
-            </li>
-            <li>
-              Never give up on the board, there will be a next round of boxing.
-            </li>
-            <li>
-              Fight fair, points deduction hurts twice as much in chessboxing.
-            </li>
-            <li>
-              Give it all in every boxing round, you'll have five minutes to
-              regenerate afterwards.
-            </li>
-            <li>
-              Never follow the chess speed of your opponent, control yourself
-              and draw at your own speed.
-            </li>
-            <li>
-              Know your opening repertoire with black and white, the quicker you
-              are in the opening game the more time you'll have in the middle
-              and end game.
-            </li>
-            <li>
-              If you are superior in boxing, go for the KO, never count on a
-              points win in chessboxing.
-            </li>
-            <li>
-              Cool down after the boxing, never make your move too soon, you'll
-              lose a few seconds on the clock, but it will pay off in the end.
-            </li>
-          </ol>
         </div>
       </section>
 
+      <!-- Golden rules section -->
+      <section class="trivia">
+        <div class="cb-goldenrules">
+          <div class="container-white">
+            <h3>The 10 golden rules of Chessboxing</h3>
+            <p>
+              What do you need to think of to become a successful chessboxer? These are the 10 golden rules every player should follow to make their
+              chessboxing life easier, stated in the
+              <a
+                href="https://wcbochessboxing.org/wcbo-rules/"
+                target="_blank"
+                aria-label="link to the rules page of the World Chessboxing Organisation, opens in new tab"
+                rel="noopener">
+                rule book
+              </a>
+              of the World Chessboxing Organisation.
+            </p>
+            <ol>
+              <li>
+                Always remember you have decided for a combined sport, that means
+                you've got to work twice as much and twice as hard as the others.
+              </li>
+              <li>Control yourself before your opponent does.</li>
+              <li>
+                If your position on the board is bad, make it a long game, when
+                you're on top make it short.
+              </li>
+              <li>
+                Never give up on the board, there will be a next round of boxing.
+              </li>
+              <li>
+                Fight fair, points deduction hurts twice as much in chessboxing.
+              </li>
+              <li>
+                Give it all in every boxing round, you'll have five minutes to
+                regenerate afterwards.
+              </li>
+              <li>
+                Never follow the chess speed of your opponent, control yourself
+                and draw at your own speed.
+              </li>
+              <li>
+                Know your opening repertoire with black and white, the quicker you
+                are in the opening game the more time you'll have in the middle
+                and end game.
+              </li>
+              <li>
+                If you are superior in boxing, go for the KO, never count on a
+                points win in chessboxing.
+              </li>
+              <li>
+                Cool down after the boxing, never make your move too soon, you'll
+                lose a few seconds on the clock, but it will pay off in the end.
+              </li>
+            </ol>
+          </div>
+          <div class="container-black">
+            <h3>Where do we go from here?</h3>
+            <p>
+              If the idea of sports that combine both a persons mind and their muscles appeals to you, as it does to me, you might be wondering where do we go from here?
+              I have spent a bit more time than I'd like to admit thinking about the possibilities of other hybrid sports. In what other ways could you combine two excisting
+              sports / events and create something new and exciting? I have come up with a few ideas, but none that are worth mentioning. It is something that I will continue to ponder,
+              but as the internet is wonderful and I have created this site and it's contents have reached you, I am sure that you are more than capable of helping me in this endevour.
+              Could it be a team sport and not a solo sport like chessboxing? Might players face different physcial challenges like in a triathlon? 
+              Is it possible to create some kind of intricate obstacle course, a cross between the traditional boot-camp style but combined with puzzles or even something resembling escape rooms? 
+              The possibilities really are endless once you start to think about it...
+              <!-- NOTE / TO DO insert form for ideas about hybrid sports -->
+              <br>
+              Any ideas you might have, please share them with me through the form below*, it doesn't have to be a "complete" idea, just brainstorm and let the ideas fly free. 
+              Then maybe, just maybe, together we can create the next hybrid sport that will challenge it's players as well as bring joy to spectators and fans... one can dream. Stranger things have happened, right? 
+              A performance artist created a sport based on inspiration from a graphic novel and that is now played all over the world, so why not?
+            </p>
+            <p class="disclaimer">
+              * Sadly, This is not a real form, it is merely a demonstration that the maker of this site has included in order to display her coding abilities. However, if you do have any ideas, please do contact me through the links in the footer. It would make me extremely happy to hear from you.
+          </div>
+        </div>
+      </section>
+
+      <!-- NOTE/TO DO add more content to this section -->
       <!-- Learn more section -->
       <section class="learn-more">
+        <div class="cb-learnmore">
         <div class="container-white">
           <h3>Learn more about chessboxing</h3>
           <p>
@@ -357,20 +429,25 @@
             national/local clubs are located and upcoming events.
           </p>
         </div>
-
         <div class="container-black">
-          <h3>Sign up for our newsletter</h3>
+          <h3>
+            Sign up for our newsletter
+          </h3>
           <p>
             If you want to stay up to date with the latest news about
-            chessboxing, sign up for our monthly newsletter. We promise not to
-            drown you in emails, you will recieve only the most important news
+            chessboxing, sign up for our monthly newsletter. I promise not to
+            spam you, you will recieve only the most important news
             and updates.*
           </p>
 
+          <!-- Newsletter signup feature -->
           <form
             id="user-info"
             onsubmit="return submitSignup()">
-            <label for="name"> Name: </label>
+            <label 
+              for="name"> 
+              Name: 
+            </label>
             <br />
             <input
               type="text"
@@ -378,7 +455,10 @@
               name="name"
               required />
             <br />
-            <label for="email"> Email: </label>
+            <label 
+              for="email"> 
+              Email: 
+            </label>
             <br />
             <input
               type="email"
@@ -386,23 +466,28 @@
               name="email"
               required />
             <br />
-            <button type="submit">Sign me up!</button>
+            <button 
+              type="submit">
+              Please keep me updated!
+            </button>
           </form>
-
+          <br>
+          <p id="signup-response">
           <!-- JS Function will put response message here, see in script section at the bottom -->
-          <p id="signup-response"></p>
+          </p>
           <p class="disclaimer">
-            * This is not a sign up for a real newsletter, it is merely a
+            * As you may have guessed... This is not a sign up for a real newsletter, again it is merely a
             demonstration that the maker of this site has included in order to
             display her coding abilities. She truly wishes that it was real, but
             alas, sadly it is not.
           </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- NOTE/TO DO add summary and personal note about why boxing and chess means a lot to me -->
-      <section class="summary">
-        <div class="containter-black">
+    <section class="summary">
+      <div class="cb-summary">
+        <div class="container-white">
           <h3>
             Reflections and a conclusion
           </h3>
@@ -424,8 +509,13 @@
             So, when it comes to chess my grandfather was a very passionate player. He would play chess through the mail, just sending moves back and forth in the post and moving pieces on separate boards he set up.
             Every room in my grandparents house had at least one chessboard, otherwise it would be incomplete. Even in his office he had two or three sets, just in case, he was a Professor of geology at Lund University* for many years and the door to his office was always open for collegues and students alike.
             A trait that both me and my father have is writing everything down, making lists about what lists I need to write. My grandfather meticulously recording each game and later turning these records into bound books. I have one of these, not because I study the moves but because it is a piece of my family legacy that I treasure.
-            <br>
-            <br>
+          </p>
+          <p class="disclaimer">
+            * I find if extremely funny that our family name "Bergsten" in Swedish roughly translates to "Mountainstone", so he was a Professor of geology, named Professor Mountainstone...</p>
+          </p>
+        </div>
+        <div class="container-black">
+          <p>
             The connection I have to boxing isn't personal in the same way but it means a lot to me all the same. My journey into boxing began around 17-19 years old. I took up the sport driven by a need to feel empowered after being bullied. 
             Learning to defend myself, particularly as a female who might not appear to be much of a fighter, made me feel strong. Feeling strong and capable was something I desperately needed and I loved the sport. I had been partaking in many other sports growing up, but none of them gave me this feeling of empowerment. 
             However, wrist injuries from there sports mainly tennis and handball, which lead to surgeries, made boxing a challenge and I couldn't continue, it was devastating. I am hoping that I may with some physcial therapy be able to return to the sport sometime, I don't think I will get too old, and if others think so well, I am really not bothered.
@@ -433,10 +523,19 @@
             <br>
             Yes, I promise I am wrapping this up now. With these two sports being important to me, each in their own way, it is not surprising that I would be drawn to chessboxing. Discovering chessboxing was a revelation. It beautifully melded two significant yet contrasting aspects of my life. 
             Beyond the personal connection, I find the sport itself intriguing and entertaining. The blend of mental and physical challenges it presents is unique, and it's a sport I would have loved regardless. But the fact that it combines chess and boxing, both close to my heart for different reasons, makes it all the more special.
+            <br>
+            <br>
+            I sincerely hope that this site has given you something, whether it be a new interest, a new perspective or just a few minutes of entertainment. To be extremely sappy, my parting words to you are: 
+            <b>
+              stay curious, keep an open mind and never stop learning.
+            </b>
+            If there is any feedback you would like to give me about how you experienced this site, please tell me whatever you have thought of through contacting me using the lovely red icons in the footer, as previsouly mentioned. 
           </p>
-          <p class="disclaimer">
-            * I find if extremely funny that our family name "Bergsten" in Swedish roughly translates to "Mountainstone", so he was a Professor of geology, named Professor Mountainstone...</p>
-          </p>
+          <img 
+            src="assets\images\logo2.webp"
+            alt="a version of the logo of the World Chessboxing Organisation, a chesspiece and the letter B (for boxing)"
+            aria label="a black and white picture showing a version of the logo of the World Chessboxing Organisation, a chesspiece and the letter B (for boxing) are combined to create the logo" />
+          </div>
         </div>
       </section>
     </main>
